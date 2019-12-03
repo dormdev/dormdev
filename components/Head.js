@@ -22,7 +22,7 @@ export default ({ image }) => (
       content={
         image
           ? image
-          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=125px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
       }
     />
 
@@ -41,7 +41,7 @@ export default ({ image }) => (
       content={
         image
           ? image
-          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=125px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
       }
     />
 
