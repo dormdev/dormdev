@@ -1,0 +1,127 @@
+import Head from "next/head";
+
+export default ({ image }) => (
+  <Head>
+    <title>DormDev - Home of student developers</title>
+    <meta name="title" content="DormDev - Home of student developers" />
+    <meta
+      name="description"
+      content="The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+    />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https:/dormdev.com/" />
+    <meta property="og:title" content="DormDev - Home of student developers" />
+    <meta
+      property="og:description"
+      content="The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+    />
+    <meta
+      property="og:image"
+      content={
+        image
+          ? image
+          : "https://og-image.dormdev.com/**DormDev**%2C%20home%20of%20student%20developers.png?theme=light&md=1&fontSize=75px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+      }
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https:/dormdev.com/" />
+    <meta
+      property="twitter:title"
+      content="DormDev - Home of student developers"
+    />
+    <meta
+      property="twitter:description"
+      content="The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+    />
+    <meta
+      property="twitter:image"
+      content={
+        image
+          ? image
+          : "https://og-image.dormdev.com/**DormDev**%2C%20home%20of%20student%20developers.png?theme=light&md=1&fontSize=75px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+      }
+    />
+
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-128.png"
+      sizes="128x128"
+    />
+
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  </Head>
+);
