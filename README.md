@@ -6,7 +6,7 @@
   <a aria-label="PRs Welcome" href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
-  <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev/tree/master">
+  <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev">
     <img src="https://flat.badgen.net/circleci/github/dormdev/dormdev?label=Circle%20CI&labelColor=555555&icon=circleci">
   </a>
   <a aria-label="Join the community on Spectrum" href="https://spectrum.chat/dormdev">
