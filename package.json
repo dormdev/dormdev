@@ -2,6 +2,7 @@
   "name": "with-styled-components",
   "version": "1.0.0",
   "scripts": {
+    "test": "jest",
     "dev": "next",
     "build": "next build",
     "start": "next start"
@@ -15,7 +16,14 @@
     "styled-components": "^4.0.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "@babel/core": "^7.7.5",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-styled-components": "^1.8.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.12.0"
   },
   "license": "ISC"
 }
