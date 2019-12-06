@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
   <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev">
-    <img src="https://flat.badgen.net/circleci/github/dormdev/dormdev?label=Circle%20CI&labelColor=555555&icon=circleci">
+    <img src="https://img.shields.io/circleci/project/github/badges/shields/master?style=flat-square">
   </a>
   <a aria-label="Join the community on Spectrum" href="https://spectrum.chat/dormdev">
     <img src="https://img.shields.io/badge/join%20the%20community-on%20spectrum-blue.svg?style=flat-square&colorB=3818E5">
@@ -22,6 +22,4 @@
 
 ---
 
-The DormDev website, built with [Next.js](https://github.com/zeit/next.js), is an open-source initative to help students get involved in modern technology online.
-
-_more coming soon!_
+The DormDev website, built with [Next.js](https://github.com/zeit/next.js), is an open-source initative to help students get involved in modern technology online. _More coming soon!_
