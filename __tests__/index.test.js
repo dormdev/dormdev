@@ -3,13 +3,13 @@
 import { shallow } from "enzyme";
 import React from "react";
 
-import App from "../pages/index.js";
+import { Logo } from "../components/Header";
 
 describe("With Enzyme", () => {
   it("App shows logo", () => {
-    const app = shallow(<App />);
+    const logo = shallow(<Logo />);
     const logoImage = "/assets/logo.svg";
 
-    expect(app.find("img").prop("src")).toEqual(logoImage);
+    expect(logo.find("img").prop("src")).toEqual(logoImage);
   });
 });
