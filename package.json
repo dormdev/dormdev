@@ -10,6 +10,8 @@
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-feather": "^2.0.3",
+    "react-tiny-popover": "^4.0.0",
     "styled-components": "^4.0.0"
   },
   "devDependencies": {
