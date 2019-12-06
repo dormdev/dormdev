@@ -7,7 +7,7 @@ export default () => (
   <>
     <Head />
     <Layout>
-      <img src="./assets/logo.svg" />
+      <img src="/assets/logo.svg" />
     </Layout>
   </>
 );
