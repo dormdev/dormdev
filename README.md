@@ -5,11 +5,14 @@
 </p>
 
 <p align="center">
-  <a aria-label="PRs Welcome" href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
-  </a>
   <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev">
     <img src="https://img.shields.io/circleci/project/github/badges/shields/master?style=flat-square">
+  </a>
+  <a aria-label="Contributors" href="https://github.com/dormdev/dormdev/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/dormdev/dormdev.svg?style=flat-square">
+  </a>  
+  <a aria-label="PRs Welcome" href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
   <a aria-label="Join the community on Spectrum" href="https://spectrum.chat/dormdev">
     <img src="https://img.shields.io/badge/join%20the%20community-on%20spectrum-blue.svg?style=flat-square&colorB=3818E5">
