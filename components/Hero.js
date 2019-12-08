@@ -5,10 +5,18 @@ const Hero = styled.section`
   text-align: center;
 
   h1 {
-    font-size: calc(1rem + 36 * (100vw / 1000));
+    font-size: 1rem;
     font-weight: 900;
     margin: 3rem auto 2rem;
     max-width: 45rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 3 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 4rem;
+    }
   }
 
   p {

@@ -238,7 +238,7 @@ export default () => {
           position={"bottom"}
           content={
             <PopoverContent>
-              <Link href="/tech">
+              <Link href="/tools">
                 <a>All Tools & Technologies</a>
               </Link>
               <PopoverContentContainer>
@@ -275,7 +275,7 @@ export default () => {
           }
         >
           <a onClick={() => setTechPopover(!techPopover)}>
-            Tech{" "}
+            Tools{" "}
             <ChevronDown size={16} style={{ transform: "translateY(2px)" }} />
           </a>
         </Popover>

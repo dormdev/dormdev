@@ -26,23 +26,71 @@ const Layout = styled.div`
   }
 
   h1 {
-    font-size: calc(1rem + 32 * (100vw / 1000));
+    font-size: 1rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 2 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 3rem;
+    }
   }
   h2 {
-    font-size: calc(1rem + 24 * (100vw / 1000));
+    font-size: 1rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 1.5 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 2.5rem;
+    }
   }
   h3 {
-    font-size: calc(1rem + 16 * (100vw / 1000));
+    font-size: 1rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 1 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 2rem;
+    }
   }
   h4 {
-    font-size: calc(1rem + 8 * (100vw / 1000));
+    font-size: 1rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 0.5 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 1.5rem;
+    }
   }
   h5 {
-    font-size: calc(1rem + 4 * (100vw / 1000));
+    font-size: 1rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 0.25 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 1.25rem;
+    }
   }
   p {
-    font-size: calc(0.9rem + 4 * (100vw / 1000));
+    font-size: 1rem;
     font-weight: 300;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 0.25 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 1.25rem;
+    }
   }
 
   a {
