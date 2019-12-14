@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
+const StyledButton = styled.button`
   position: relative;
   display: block;
   border: none;
@@ -34,7 +34,7 @@ const Button = styled.button`
   }
 `;
 
-export default props => {
+const Button = props => {
   const {
     children,
     onClick,
@@ -49,7 +49,7 @@ export default props => {
   } = props;
 
   return (
-    <Button
+    <StyledButton
       backgrounsdColor={backgroundColor}
       textColor={textColor}
       fontSize={fontSize}
@@ -61,6 +61,8 @@ export default props => {
       onClick={onClick}
     >
       {children}
-    </Button>
+    </StyledButton>
   );
 };
+
+export default Button;
