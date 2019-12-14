@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ChevronDown, Menu, X } from "react-feather";
 import Popover from "react-tiny-popover";
 
-import Button from "./Button";
+import Button from "~/components/Button";
 
 const LogoContainer = styled.div`
   a {

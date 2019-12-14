@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "test": "jest",
-    "dev": "NODE_PATH=. next",
-    "build": "NODE_PATH=. next build",
+    "dev": "next",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "babel-jest": "^24.9.0",
+    "babel-plugin-root-import": "^6.4.1",
     "babel-plugin-styled-components": "^1.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
