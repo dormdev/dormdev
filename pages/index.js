@@ -1,16 +1,16 @@
 import React from "react";
 
 import Head from "../components/Head";
-import Layout from "../components/Layout";
+import Global from "../layout/Global";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
 export default () => (
   <>
     <Head />
-    <Layout>
+    <Global>
       <Header />
       <Hero />
-    </Layout>
+    </Global>
   </>
 );

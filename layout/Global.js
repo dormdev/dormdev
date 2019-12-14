@@ -62,6 +62,17 @@ const Layout = styled.div`
     font-size: 1rem;
 
     @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 0.75 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 1.75rem;
+    }
+  }
+  h5 {
+    font-size: 1rem;
+
+    @media screen and (min-width: 20rem) {
       font-size: calc(1rem + 0.5 * ((100vw - 20rem) / 50));
     }
 
@@ -69,7 +80,7 @@ const Layout = styled.div`
       font-size: 1.5rem;
     }
   }
-  h5 {
+  h6 {
     font-size: 1rem;
 
     @media screen and (min-width: 20rem) {
@@ -80,6 +91,7 @@ const Layout = styled.div`
       font-size: 1.25rem;
     }
   }
+
   p {
     font-size: 1rem;
     font-weight: 300;
