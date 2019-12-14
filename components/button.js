@@ -8,10 +8,11 @@ const Button = styled.button`
   text-align: center;
   box-sizing: border-box;
   text-decoration: none;
-  padding: 0.8rem 3rem;
+  padding: 0.5rem 2rem;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease 0s;
 
@@ -36,6 +37,7 @@ const Button = styled.button`
 export default props => {
   const {
     children,
+    onClick,
     backgroundColor,
     textColor,
     fontSize,
@@ -56,7 +58,7 @@ export default props => {
       marginTop={marginTop}
       marginBottom={marginBottom}
       centered={centered}
-      onClick={props.onClick}
+      onClick={onClick}
     >
       {children}
     </Button>

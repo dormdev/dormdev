@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "focus-visible";
 
 const Layout = styled.div`
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -209,6 +210,14 @@ export default props => {
             transition-duration: 0.01ms !important;
             scroll-behavior: auto !important;
           }
+        }
+
+        *:focus:not(.focus-visible) {
+          outline: none;
+        }
+
+        .focus-visible {
+          outline: #0070f3 solid 2px;
         }
 
         .popover {

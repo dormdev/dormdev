@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "focus-visible": "^5.0.2",
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
