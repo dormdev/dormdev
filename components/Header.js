@@ -55,7 +55,7 @@ const ContextualMenu = styled.div`
     cursor: pointer;
   }
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 820px) {
     display: none;
   }
 `;
@@ -115,7 +115,7 @@ const Title = styled.div`
 const Nav = styled.nav`
   display: none;
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 820px) {
     display: flex;
     align-items: center;
 
