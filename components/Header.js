@@ -295,7 +295,16 @@ export default () => {
             </PopoverContent>
           }
         >
-          <a onClick={() => setTechPopover(!techPopover)}>
+          <a
+            role="button"
+            tabindex="0"
+            onClick={() => setTechPopover(!techPopover)}
+            onKeyPress={event => {
+              if (event.key === "Enter") {
+                setTechPopover(!techPopover);
+              }
+            }}
+          >
             Tools{" "}
             <ChevronDown size={16} style={{ transform: "translateY(2px)" }} />
           </a>
@@ -320,7 +329,16 @@ export default () => {
             </PopoverContent>
           }
         >
-          <a onClick={() => setCommunityPopover(!communityPopover)}>
+          <a
+            role="button"
+            tabindex="0"
+            onClick={() => setCommunityPopover(!communityPopover)}
+            onKeyPress={event => {
+              if (event.key === "Enter") {
+                setCommunityPopover(!communityPopover);
+              }
+            }}
+          >
             Community{" "}
             <ChevronDown size={16} style={{ transform: "translateY(2px)" }} />
           </a>
