@@ -173,10 +173,70 @@ const PopoverContentSection = styled.div`
   }
 `;
 
+const ToolsPopover = () => {
+  return (
+    <PopoverContent id="tools-popover" role="menu" tabIndex={-1}>
+      <Link href="/tools">
+        <a>All Tools & Technologies</a>
+      </Link>
+      <PopoverContentContainer>
+        <PopoverContentSection>
+          <Title size="0.8rem" margin="0 0 0.5rem">
+            Software
+          </Title>
+          <Link href="/frontend">
+            <a>Frontend</a>
+          </Link>
+          <Link href="/mobile">
+            <a>Mobile</a>
+          </Link>
+          <Link href="/backend">
+            <a>Backend</a>
+          </Link>
+          <Link href="/devops">
+            <a>DevOps</a>
+          </Link>
+        </PopoverContentSection>
+        <PopoverContentSection>
+          <Title size="0.8rem" margin="0 0 0.5rem">
+            Hardware
+          </Title>
+          <Link href="/computers">
+            <a>Computers</a>
+          </Link>
+          <Link href="/sensors">
+            <a>Sensors</a>
+          </Link>
+        </PopoverContentSection>
+      </PopoverContentContainer>
+    </PopoverContent>
+  );
+};
+
+const CommunityPopover = () => (
+  <PopoverContent id="community-popover" role="menu" tabIndex={-1}>
+    <PopoverContentSection>
+      <Title size="0.8rem" margin="0 0 0.5rem">
+        Join the discussion
+      </Title>
+      <a href="https://spectrum.chat/dormdev">Spectrum</a>
+      <a href="https://www.facebook.com/groups/dormdev">Facebook Group</a>
+      <a href="https://www.reddit.com/r/DormDev">Subreddit</a>
+    </PopoverContentSection>
+  </PopoverContent>
+);
+
 export default () => {
   const [menu, setMenu] = useState(false);
   const [communityPopover, setCommunityPopover] = useState(false);
-  const [techPopover, setTechPopover] = useState(false);
+  const [toolsPopover, setToolsPopover] = useState(false);
+
+  const focusPopover = id => {
+    setTimeout(() => {
+      const popover = document.getElementById(id);
+      popover && popover.focus();
+    }, 0);
+  };
 
   return (
     <Header>
@@ -254,54 +314,22 @@ export default () => {
         </Link>
         <Popover
           containerClassName="popover"
-          isOpen={techPopover}
-          onClickOutside={() => setTechPopover(false)}
+          isOpen={toolsPopover}
+          onClickOutside={() => setToolsPopover(false)}
           position={"bottom"}
-          content={
-            <PopoverContent>
-              <Link href="/tools">
-                <a>All Tools & Technologies</a>
-              </Link>
-              <PopoverContentContainer>
-                <PopoverContentSection>
-                  <Title size="0.8rem" margin="0 0 0.5rem">
-                    Software
-                  </Title>
-                  <Link href="/frontend">
-                    <a>Frontend</a>
-                  </Link>
-                  <Link href="/mobile">
-                    <a>Mobile</a>
-                  </Link>
-                  <Link href="/backend">
-                    <a>Backend</a>
-                  </Link>
-                  <Link href="/devops">
-                    <a>DevOps</a>
-                  </Link>
-                </PopoverContentSection>
-                <PopoverContentSection>
-                  <Title size="0.8rem" margin="0 0 0.5rem">
-                    Hardware
-                  </Title>
-                  <Link href="/computers">
-                    <a>Computers</a>
-                  </Link>
-                  <Link href="/sensors">
-                    <a>Sensors</a>
-                  </Link>
-                </PopoverContentSection>
-              </PopoverContentContainer>
-            </PopoverContent>
-          }
+          content={ToolsPopover}
         >
           <a
             role="button"
-            tabindex="0"
-            onClick={() => setTechPopover(!techPopover)}
+            tabIndex="0"
+            onClick={() => {
+              setToolsPopover(!toolsPopover);
+              focusPopover("tools-popover");
+            }}
             onKeyPress={event => {
               if (event.key === "Enter") {
-                setTechPopover(!techPopover);
+                setToolsPopover(!toolsPopover);
+                focusPopover("tools-popover");
               }
             }}
           >
@@ -314,28 +342,19 @@ export default () => {
           isOpen={communityPopover}
           onClickOutside={() => setCommunityPopover(false)}
           position={"bottom"}
-          content={
-            <PopoverContent>
-              <PopoverContentSection>
-                <Title size="0.8rem" margin="0 0 0.5rem">
-                  Join the discussion
-                </Title>
-                <a href="https://spectrum.chat/dormdev">Spectrum</a>
-                <a href="https://www.facebook.com/groups/dormdev">
-                  Facebook Group
-                </a>
-                <a href="https://www.reddit.com/r/DormDev">Subreddit</a>
-              </PopoverContentSection>
-            </PopoverContent>
-          }
+          content={CommunityPopover}
         >
           <a
             role="button"
-            tabindex="0"
-            onClick={() => setCommunityPopover(!communityPopover)}
+            tabIndex="0"
+            onClick={() => {
+              setCommunityPopover(!communityPopover);
+              focusPopover("community-popover");
+            }}
             onKeyPress={event => {
               if (event.key === "Enter") {
                 setCommunityPopover(!communityPopover);
+                focusPopover("community-popover");
               }
             }}
           >
