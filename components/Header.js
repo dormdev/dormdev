@@ -257,6 +257,7 @@ export default () => {
                       textColor="#000"
                       width="100%"
                       centered
+                      hover="border-color: black"
                     >
                       Login
                     </Button>

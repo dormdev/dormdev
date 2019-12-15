@@ -31,7 +31,9 @@ const Button = styled.button`
   `}
 
   &:hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+    ${props =>
+      props.hover ||
+      "box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25)"};
   }
 `;
 
@@ -47,6 +49,7 @@ export default props => {
     marginBottom,
     centered,
     width,
+    hover,
     onClick
   } = props;
 
@@ -61,6 +64,7 @@ export default props => {
       marginBottom={marginBottom}
       centered={centered}
       width={width}
+      hover={hover}
       onClick={onClick}
     >
       {children}
