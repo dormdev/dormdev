@@ -26,10 +26,6 @@ const Hero = styled.section`
   }
 `;
 
-const Illustration = styled.div`
-  position: relative;
-`;
-
 const rotateGirl = keyframes`
   from {
     transform: rotate(-20deg);
@@ -70,11 +66,11 @@ const Boy = styled.img`
 
 export default () => (
   <Hero>
-    <Illustration>
+    <div style={{ position: "relative" }}>
       <Girl src="/assets/girl.svg" />
       <Boy src="/assets/boy.svg" />
-      <img src="/assets/hero.svg" />
-    </Illustration>
+      <img src="/assets/background.png" />
+    </div>
     <h1>Home of student developers.</h1>
     <p>
       Showcasing the best courses, tools and technologies – handpicked for

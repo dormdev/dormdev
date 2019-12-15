@@ -22,6 +22,7 @@ const Button = styled.button`
   font-weight: ${props => props.fontWeight || "500"};
   margin-top: ${props => props.marginTop};
   margin-bottom: ${props => props.marginBottom};
+  width: ${props => props.width};
 
   ${props =>
     props.centered &&
@@ -37,20 +38,21 @@ const Button = styled.button`
 export default props => {
   const {
     children,
-    onClick,
     backgroundColor,
     textColor,
     fontSize,
     fontWeight,
     borderRadius,
-    centered,
     marginTop,
-    marginBottom
+    marginBottom,
+    centered,
+    width,
+    onClick
   } = props;
 
   return (
     <Button
-      backgrounsdColor={backgroundColor}
+      backgroundColor={backgroundColor}
       textColor={textColor}
       fontSize={fontSize}
       fontWeight={fontWeight}
@@ -58,6 +60,7 @@ export default props => {
       marginTop={marginTop}
       marginBottom={marginBottom}
       centered={centered}
+      width={width}
       onClick={onClick}
     >
       {children}

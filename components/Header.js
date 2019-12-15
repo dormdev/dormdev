@@ -74,6 +74,7 @@ const List = styled.nav`
     padding: 0;
     list-style: none;
     text-align: center;
+    margin-top: 2rem;
 
     li {
       margin-top: 1rem;
@@ -188,6 +189,30 @@ export default () => {
               <X size={36} onClick={() => setMenu(false)} />
             </ListHeader>
             <ul>
+              <li>
+                <Link href="/login">
+                  <a>
+                    <Button
+                      backgroundColor="#FFF"
+                      textColor="#000"
+                      width="100%"
+                      centered
+                    >
+                      Login
+                    </Button>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/join">
+                  <a>
+                    <Button width="100%" centered>
+                      Join
+                    </Button>
+                  </a>
+                </Link>
+              </li>
+              <hr />
               <Title>General</Title>
               <li>
                 <Link href="/about">
@@ -216,12 +241,6 @@ export default () => {
               </li>
               <li>
                 <a href="https://www.reddit.com/r/DormDev">Subreddit</a>
-              </li>
-              <hr />
-              <li>
-                <Link href="/login">
-                  <a>Login</a>
-                </Link>
               </li>
             </ul>
           </List>
