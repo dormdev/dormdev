@@ -285,8 +285,8 @@ export default () => {
                 </Link>
               </li>
               <li>
-                <Link href="/tech">
-                  <a>Tech</a>
+                <Link href="/tools">
+                  <a>Tools & Tech</a>
                 </Link>
               </li>
               <hr />
