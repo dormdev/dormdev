@@ -173,27 +173,27 @@ const PopoverContentSection = styled.div`
   }
 `;
 
-const ToolsPopover = () => {
+const TutorialsPopover = () => {
   return (
-    <PopoverContent id="tools-popover" role="menu" tabIndex={-1}>
-      <Link href="/tools">
-        <a>All Tools & Technologies</a>
+    <PopoverContent id="tutorials-popover" role="menu" tabIndex={-1}>
+      <Link href="/tutorials">
+        <a>Tutorials & Courses</a>
       </Link>
       <PopoverContentContainer>
         <PopoverContentSection>
           <Title size="0.8rem" margin="0 0 0.5rem">
             Software
           </Title>
-          <Link href="/frontend">
+          <Link href="/tutorials/frontend">
             <a>Frontend</a>
           </Link>
-          <Link href="/mobile">
-            <a>Mobile</a>
-          </Link>
-          <Link href="/backend">
+          <Link href="/tutorials/backend">
             <a>Backend</a>
           </Link>
-          <Link href="/devops">
+          <Link href="/tutorials/mobile">
+            <a>Mobile</a>
+          </Link>
+          <Link href="/tutorials/devops">
             <a>DevOps</a>
           </Link>
         </PopoverContentSection>
@@ -201,10 +201,50 @@ const ToolsPopover = () => {
           <Title size="0.8rem" margin="0 0 0.5rem">
             Hardware
           </Title>
-          <Link href="/computers">
+          <Link href="/tutorials/computers">
             <a>Computers</a>
           </Link>
-          <Link href="/sensors">
+          <Link href="/tutorials/sensors">
+            <a>Sensors</a>
+          </Link>
+        </PopoverContentSection>
+      </PopoverContentContainer>
+    </PopoverContent>
+  );
+};
+
+const ToolsPopover = () => {
+  return (
+    <PopoverContent id="tools-popover" role="menu" tabIndex={-1}>
+      <Link href="/tools">
+        <a>Tools & Technologies</a>
+      </Link>
+      <PopoverContentContainer>
+        <PopoverContentSection>
+          <Title size="0.8rem" margin="0 0 0.5rem">
+            Software
+          </Title>
+          <Link href="/tools/frontend">
+            <a>Frontend</a>
+          </Link>
+          <Link href="/tools/backend">
+            <a>Backend</a>
+          </Link>
+          <Link href="/tools/mobile">
+            <a>Mobile</a>
+          </Link>
+          <Link href="/tools/devops">
+            <a>DevOps</a>
+          </Link>
+        </PopoverContentSection>
+        <PopoverContentSection>
+          <Title size="0.8rem" margin="0 0 0.5rem">
+            Hardware
+          </Title>
+          <Link href="/tools/computers">
+            <a>Computers</a>
+          </Link>
+          <Link href="/tools/sensors">
             <a>Sensors</a>
           </Link>
         </PopoverContentSection>
@@ -228,8 +268,9 @@ const CommunityPopover = () => (
 
 export default () => {
   const [menu, setMenu] = useState(false);
-  const [communityPopover, setCommunityPopover] = useState(false);
+  const [tutorialsPopover, setTutorialsPopover] = useState(false);
   const [toolsPopover, setToolsPopover] = useState(false);
+  const [communityPopover, setCommunityPopover] = useState(false);
 
   const focusPopover = id => {
     setTimeout(() => {
@@ -251,7 +292,7 @@ export default () => {
             <ul>
               <li>
                 <Link href="/login">
-                  <a>
+                  <a tabIndex={-1}>
                     <Button
                       backgroundColor="#FFF"
                       textColor="#000"
@@ -266,7 +307,7 @@ export default () => {
               </li>
               <li>
                 <Link href="/join">
-                  <a>
+                  <a tabIndex={-1}>
                     <Button width="100%" centered>
                       Join
                     </Button>
@@ -281,8 +322,8 @@ export default () => {
                 </Link>
               </li>
               <li>
-                <Link href="/courses">
-                  <a>Courses</a>
+                <Link href="/tutorials">
+                  <a>Tutorials & Courses</a>
                 </Link>
               </li>
               <li>
@@ -310,9 +351,31 @@ export default () => {
         )}
       </ContextualMenu>
       <Nav>
-        <Link href="/courses">
-          <a>Courses</a>
-        </Link>
+        <Popover
+          containerClassName="popover"
+          isOpen={tutorialsPopover}
+          onClickOutside={() => setTutorialsPopover(false)}
+          position={"bottom"}
+          content={TutorialsPopover}
+        >
+          <a
+            role="button"
+            tabIndex="0"
+            onClick={() => {
+              setTutorialsPopover(!tutorialsPopover);
+              focusPopover("tutorials-popover");
+            }}
+            onKeyPress={event => {
+              if (event.key === "Enter") {
+                setTutorialsPopover(!tutorialsPopover);
+                focusPopover("tutorials-popover");
+              }
+            }}
+          >
+            Tutorials{" "}
+            <ChevronDown size={16} style={{ transform: "translateY(2px)" }} />
+          </a>
+        </Popover>
         <Popover
           containerClassName="popover"
           isOpen={toolsPopover}
@@ -371,7 +434,7 @@ export default () => {
           <a>Login</a>
         </Link>
         <Link href="/join">
-          <a>
+          <a tabIndex={-1}>
             <Button>Join</Button>
           </a>
         </Link>

@@ -73,8 +73,8 @@ export default () => (
     </div>
     <h1>Home of student developers.</h1>
     <p>
-      Showcasing the best courses, tools and technologies – handpicked for
-      quality with exclusive offers and discounts for students.
+      Showcasing the best tutorials and tools – handpicked for quality with
+      exclusive offers and discounts for students.
     </p>
   </Hero>
 );
