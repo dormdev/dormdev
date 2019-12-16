@@ -55,7 +55,7 @@ const ContextualMenu = styled.div`
     cursor: pointer;
   }
 
-  @media all and (min-width: 820px) {
+  @media all and (min-width: 885px) {
     display: none;
   }
 `;
@@ -115,7 +115,7 @@ const Title = styled.div`
 const Nav = styled.nav`
   display: none;
 
-  @media all and (min-width: 820px) {
+  @media all and (min-width: 885px) {
     display: flex;
     align-items: center;
 
@@ -173,39 +173,62 @@ const PopoverContentSection = styled.div`
   }
 `;
 
-const TutorialsPopover = () => {
+const LearningPopover = () => {
   return (
-    <PopoverContent id="tutorials-popover" role="menu" tabIndex={-1}>
-      <Link href="/tutorials">
-        <a>Tutorials & Courses</a>
+    <PopoverContent id="learning-popover" role="menu" tabIndex={-1}>
+      <Link href="/learning">
+        <a>All Tutorials, Courses & Learning Materials</a>
       </Link>
       <PopoverContentContainer>
         <PopoverContentSection>
           <Title size="0.8rem" margin="0 0 0.5rem">
-            Software
+            High-Level
           </Title>
-          <Link href="/tutorials/frontend">
+          <Link href="/learning/frontend">
             <a>Frontend</a>
           </Link>
-          <Link href="/tutorials/backend">
+          <Link href="/learning/backend">
             <a>Backend</a>
           </Link>
-          <Link href="/tutorials/mobile">
+          <Link href="/learning/mobile">
             <a>Mobile</a>
           </Link>
-          <Link href="/tutorials/devops">
-            <a>DevOps</a>
+          <Link href="/learning/gaming">
+            <a>Gaming</a>
+          </Link>
+          <Link href="/learning/ai">
+            <a>AI / Machine Learning</a>
+          </Link>
+          <Link href="/learning/quantum">
+            <a>Quantum Computing</a>
           </Link>
         </PopoverContentSection>
         <PopoverContentSection>
           <Title size="0.8rem" margin="0 0 0.5rem">
-            Hardware
+            Low-Level
           </Title>
-          <Link href="/tutorials/computers">
-            <a>Computers</a>
+          <Link href="/learning/algorithms">
+            <a>Algorithms</a>
           </Link>
-          <Link href="/tutorials/sensors">
-            <a>Sensors</a>
+          <Link href="/learning/embedded-systems">
+            <a>Embedded Systems</a>
+          </Link>
+          <Link href="/learning/robotics">
+            <a>Robotics</a>
+          </Link>
+        </PopoverContentSection>
+        <PopoverContentSection>
+          <Title size="0.8rem" margin="0 0 0.5rem">
+            Systems
+          </Title>
+          <Link href="/learning/devops">
+            <a>DevOps</a>
+          </Link>
+          <Link href="/learning/security">
+            <a>Security</a>
+          </Link>
+          <Link href="/learning/blockchain">
+            <a>Blockchain</a>
           </Link>
         </PopoverContentSection>
       </PopoverContentContainer>
@@ -217,32 +240,29 @@ const ToolsPopover = () => {
   return (
     <PopoverContent id="tools-popover" role="menu" tabIndex={-1}>
       <Link href="/tools">
-        <a>Tools & Technologies</a>
+        <a>All Tools & Technologies</a>
       </Link>
       <PopoverContentContainer>
         <PopoverContentSection>
           <Title size="0.8rem" margin="0 0 0.5rem">
             Software
           </Title>
-          <Link href="/tools/frontend">
-            <a>Frontend</a>
+          <Link href="/tools/workflow">
+            <a>Workflow</a>
           </Link>
-          <Link href="/tools/backend">
-            <a>Backend</a>
+          <Link href="/tools/design">
+            <a>Design</a>
           </Link>
-          <Link href="/tools/mobile">
-            <a>Mobile</a>
-          </Link>
-          <Link href="/tools/devops">
-            <a>DevOps</a>
+          <Link href="/tools/cloud">
+            <a>Cloud Services</a>
           </Link>
         </PopoverContentSection>
         <PopoverContentSection>
           <Title size="0.8rem" margin="0 0 0.5rem">
             Hardware
           </Title>
-          <Link href="/tools/computers">
-            <a>Computers</a>
+          <Link href="/tools/computer-part">
+            <a>Computer Parts</a>
           </Link>
           <Link href="/tools/sensors">
             <a>Sensors</a>
@@ -252,6 +272,28 @@ const ToolsPopover = () => {
     </PopoverContent>
   );
 };
+
+const ResourcesPopover = () => (
+  <PopoverContent id="resources-popover" role="menu" tabIndex={-1}>
+    <PopoverContentSection>
+      <Title size="0.8rem" margin="0 0 0.5rem">
+        Resources for Developers
+      </Title>
+      <Link href="/resources/jobs">
+        <a>Job Search</a>
+      </Link>
+      <Link href="/resources/interviews">
+        <a>Coding Interviews</a>
+      </Link>
+      <Link href="/resources/career">
+        <a>Career Development</a>
+      </Link>
+      <Link href="/resources/startups">
+        <a>Startups</a>
+      </Link>
+    </PopoverContentSection>
+  </PopoverContent>
+);
 
 const CommunityPopover = () => (
   <PopoverContent id="community-popover" role="menu" tabIndex={-1}>
@@ -268,8 +310,9 @@ const CommunityPopover = () => (
 
 export default () => {
   const [menu, setMenu] = useState(false);
-  const [tutorialsPopover, setTutorialsPopover] = useState(false);
+  const [learningPopover, setLearningPopover] = useState(false);
   const [toolsPopover, setToolsPopover] = useState(false);
+  const [resourcesPopover, setResourcesPopover] = useState(false);
   const [communityPopover, setCommunityPopover] = useState(false);
 
   const focusPopover = id => {
@@ -317,18 +360,23 @@ export default () => {
               <hr />
               <Title>General</Title>
               <li>
-                <Link href="/about">
-                  <a>About</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/tutorials">
-                  <a>Tutorials & Courses</a>
+                <Link href="/learning">
+                  <a>Learning</a>
                 </Link>
               </li>
               <li>
                 <Link href="/tools">
-                  <a>Tools & Tech</a>
+                  <a>Tools</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources">
+                  <a>Resources</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about">
+                  <a>About</a>
                 </Link>
               </li>
               <hr />
@@ -353,26 +401,26 @@ export default () => {
       <Nav>
         <Popover
           containerClassName="popover"
-          isOpen={tutorialsPopover}
-          onClickOutside={() => setTutorialsPopover(false)}
+          isOpen={learningPopover}
+          onClickOutside={() => setLearningPopover(false)}
           position={"bottom"}
-          content={TutorialsPopover}
+          content={LearningPopover}
         >
           <a
             role="button"
             tabIndex="0"
             onClick={() => {
-              setTutorialsPopover(!tutorialsPopover);
-              focusPopover("tutorials-popover");
+              setLearningPopover(!learningPopover);
+              focusPopover("learning-popover");
             }}
             onKeyPress={event => {
               if (event.key === "Enter") {
-                setTutorialsPopover(!tutorialsPopover);
-                focusPopover("tutorials-popover");
+                setLearningPopover(!learningPopover);
+                focusPopover("learning-popover");
               }
             }}
           >
-            Tutorials{" "}
+            Learning{" "}
             <ChevronDown size={16} style={{ transform: "translateY(2px)" }} />
           </a>
         </Popover>
@@ -403,6 +451,31 @@ export default () => {
         </Popover>
         <Popover
           containerClassName="popover"
+          isOpen={resourcesPopover}
+          onClickOutside={() => setResourcesPopover(false)}
+          position={"bottom"}
+          content={ResourcesPopover}
+        >
+          <a
+            role="button"
+            tabIndex="0"
+            onClick={() => {
+              setResourcesPopover(!resourcesPopover);
+              focusPopover("resources-popover");
+            }}
+            onKeyPress={event => {
+              if (event.key === "Enter") {
+                setResourcesPopover(!resourcesPopover);
+                focusPopover("resources-popover");
+              }
+            }}
+          >
+            Resources{" "}
+            <ChevronDown size={16} style={{ transform: "translateY(2px)" }} />
+          </a>
+        </Popover>
+        <Popover
+          containerClassName="popover"
           isOpen={communityPopover}
           onClickOutside={() => setCommunityPopover(false)}
           position={"bottom"}
@@ -426,9 +499,6 @@ export default () => {
             <ChevronDown size={16} style={{ transform: "translateY(2px)" }} />
           </a>
         </Popover>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
         <hr />
         <Link href="/login">
           <a>Login</a>
