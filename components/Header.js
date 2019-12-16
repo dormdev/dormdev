@@ -261,7 +261,7 @@ const ToolsPopover = () => {
           <Title size="0.8rem" margin="0 0 0.5rem">
             Hardware
           </Title>
-          <Link href="/tools/computer-part">
+          <Link href="/tools/computers">
             <a>Computer Parts</a>
           </Link>
           <Link href="/tools/sensors">
