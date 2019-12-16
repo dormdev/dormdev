@@ -177,7 +177,7 @@ const LearningPopover = () => {
   return (
     <PopoverContent id="learning-popover" role="menu" tabIndex={-1}>
       <Link href="/learning">
-        <a>All Tutorials, Courses & Learning Materials</a>
+        <a>All Tutorials, Courses & Learning Material</a>
       </Link>
       <PopoverContentContainer>
         <PopoverContentSection>
