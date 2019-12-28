@@ -184,6 +184,9 @@ const LearningPopover = () => {
           <Title size="0.8rem" margin="0 0 0.5rem">
             High-Level
           </Title>
+          <Link href="/learning/design">
+            <a>Design</a>
+          </Link>
           <Link href="/learning/frontend">
             <a>Frontend</a>
           </Link>
@@ -249,9 +252,6 @@ const ToolsPopover = () => {
           </Title>
           <Link href="/tools/workflow">
             <a>Workflow</a>
-          </Link>
-          <Link href="/tools/design">
-            <a>Design</a>
           </Link>
           <Link href="/tools/cloud">
             <a>Cloud Services</a>
