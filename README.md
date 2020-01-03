@@ -11,11 +11,8 @@
   <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev">
     <img src="https://img.shields.io/circleci/project/github/badges/shields/master?style=flat-square">
   </a>
-  <a>
+  <a aria-label="Uptime status" href="https://status.dormdev.com">
     <img src="https://img.shields.io/uptimerobot/ratio/m784086893-5f638a54e5248faf8e7ec23d?style=flat-square">
-  </a>
-  <a aria-label="W3C Validator" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdormdev.com%2F">
-    <img src="https://img.shields.io/w3c-validation/html?style=flat-square&targetUrl=https%3A%2F%2Fdormdev.com%2F">
   </a>
   <a aria-label="PRs Welcome" href="./CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
