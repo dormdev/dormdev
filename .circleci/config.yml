@@ -42,4 +42,4 @@ jobs:
       - run: sudo yarn global add @lhci/cli@0.3.x
       - run:
           name: lhci autorun
-          command: lhci autorun --staticDistDir="./public" --upload.target=temporary-public-storage || echo "LHCI failed!"
+          command: lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
