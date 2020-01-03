@@ -1,0 +1,21 @@
+# Audit URLs using Lighthouse and test performance with Lighthouse CI.
+# From: https://github.com/treosh/lighthouse-ci-action
+
+name: Lighthouse
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Run Lighthouse and test budgets
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            dormdev-git-${{ steps.extract_branch.outputs.branch }}.dorm-dev.now.sh
+          budgetPath: ./budgets.json
+          temporaryPublicStorage: true
