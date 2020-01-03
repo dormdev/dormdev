@@ -14,7 +14,7 @@
   <a aria-label="Uptime status" href="https://status.dormdev.com">
     <img src="https://img.shields.io/uptimerobot/ratio/m784086893-5f638a54e5248faf8e7ec23d?style=flat-square">
   </a>
-  <a aria-label="PRs Welcome" href="./CONTRIBUTING.md">
+  <a aria-label="PRs Welcome" href="./.github/PULL_REQUEST_TEMPLATE.md">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
   <a aria-label="Built with Next.js" href="https://github.com/zeit/next.js">
@@ -51,8 +51,8 @@
 
 ---
 
-DormDev's mission is to equalize access and mobilize progress in technology. By utilizing and distilling the wealth of information on the Internet, and bringing people to work toward common goals, we can creative powerful movements of change in the technology industry.
+DormDev's mission is to equalize access and mobilize progress in the technology industry. By distilling and utilizing the wealth of information on the Internet, and bringing people to work toward common goals, we can create powerful advancements in science and technology.
 
-This repository is open source and community contributions are encouraged.
+This repository is open source under the [Apache License 2.0](./LICENSE). Community contributions are welcomed and encouraged – please see the [Contributing Guidelines](./CONTRIBUTING.md) and the [Pull Request Template](./.github/PULL_REQUEST_TEMPLATE.md) for guidance.
 
 _More coming soon!_
