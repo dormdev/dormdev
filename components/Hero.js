@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
+import React from 'react'
+import styled, { keyframes } from 'styled-components'
 
 const Hero = styled.section`
   text-align: center;
@@ -24,7 +24,7 @@ const Hero = styled.section`
     padding: 0 1rem;
     max-width: 42rem;
   }
-`;
+`
 
 const rotateGirl = keyframes`
   from {
@@ -34,7 +34,7 @@ const rotateGirl = keyframes`
   to {
     transform: rotate(-16deg) translateY(-5px);
   }
-`;
+`
 
 const rotateBoy = keyframes`
   from {
@@ -44,7 +44,7 @@ const rotateBoy = keyframes`
   to {
     transform: rotate(-6deg) translateY(5px);
   }
-`;
+`
 
 const Girl = styled.img`
   position: absolute;
@@ -53,7 +53,7 @@ const Girl = styled.img`
   right: 28%;
   transform: rotate(-20deg);
   animation: ${rotateGirl} 2.5s 1s alternate infinite ease-in-out;
-`;
+`
 
 const Boy = styled.img`
   position: absolute;
@@ -62,14 +62,14 @@ const Boy = styled.img`
   left: 28%;
   transform: rotate(-10deg);
   animation: ${rotateBoy} 2.5s 1s alternate infinite ease-in-out;
-`;
+`
 
 export default () => (
   <Hero>
-    <div style={{ position: "relative" }}>
-      <Girl src="/assets/girl.svg" />
-      <Boy src="/assets/boy.svg" />
-      <img src="/assets/background.png" />
+    <div style={{ position: 'relative' }}>
+      <Girl src="/assets/girl.svg" alt="" />
+      <Boy src="/assets/boy.svg" alt="" />
+      <img src="/assets/background.png" alt="" />
     </div>
     <h1>Home of student developers.</h1>
     <p>
@@ -77,4 +77,4 @@ export default () => (
       with exclusive offers and discounts for students.
     </p>
   </Hero>
-);
+)

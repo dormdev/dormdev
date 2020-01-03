@@ -1,7 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-const Button = styled.button`
+const StyledButton = styled.button`
   position: relative;
   display: block;
   border: none;
@@ -16,10 +17,10 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.2s ease 0s;
 
-  background-color: ${props => props.backgroundColor || "#000"};
-  color: ${props => props.textColor || "#fff"};
-  font-size: ${props => props.fontSize || "0.875rem"};
-  font-weight: ${props => props.fontWeight || "500"};
+  background-color: ${props => props.backgroundColor || '#000'};
+  color: ${props => props.textColor || '#fff'};
+  font-size: ${props => props.fontSize || '0.875rem'};
+  font-weight: ${props => props.fontWeight || '500'};
   margin-top: ${props => props.marginTop};
   margin-bottom: ${props => props.marginBottom};
   width: ${props => props.width};
@@ -33,13 +34,14 @@ const Button = styled.button`
   &:hover {
     ${props =>
       props.hover ||
-      "box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25)"};
+      'box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25)'};
   }
-`;
+`
 
-export default props => {
+const Button = props => {
   const {
     children,
+    text,
     backgroundColor,
     textColor,
     fontSize,
@@ -51,10 +53,10 @@ export default props => {
     width,
     hover,
     onClick
-  } = props;
+  } = props
 
   return (
-    <Button
+    <StyledButton
       backgroundColor={backgroundColor}
       textColor={textColor}
       fontSize={fontSize}
@@ -67,7 +69,25 @@ export default props => {
       hover={hover}
       onClick={onClick}
     >
-      {children}
-    </Button>
-  );
-};
+      {text || children}
+    </StyledButton>
+  )
+}
+
+Button.propTypes = {
+  children: PropTypes.node,
+  text: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  textColor: PropTypes.string,
+  fontSize: PropTypes.string,
+  fontWeight: PropTypes.string,
+  borderRadius: PropTypes.string,
+  marginTop: PropTypes.string,
+  marginBottom: PropTypes.string,
+  centered: PropTypes.bool,
+  width: PropTypes.string,
+  hover: PropTypes.bool,
+  onClick: PropTypes.func
+}
+
+export default Button

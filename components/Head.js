@@ -1,18 +1,18 @@
-import Head from "next/head";
+import Head from 'next/head'
+import PropTypes from 'prop-types'
 
-export default ({ title, description, ogImage }) => (
+const DocumentHead = ({ title, description, ogImage }) => (
   <Head>
-    <title>{title ? title : "DormDev - Home of student developers"}</title>
+    <title>{title || 'DormDev - Home of student developers'}</title>
     <meta
       name="title"
-      content={title ? title : "DormDev - Home of student developers"}
+      content={title || 'DormDev - Home of student developers'}
     />
     <meta
       name="description"
       content={
-        description
-          ? description
-          : "The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+        description ||
+        'The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers.'
       }
     />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -21,22 +21,20 @@ export default ({ title, description, ogImage }) => (
     <meta property="og:url" content="https:/dormdev.com" />
     <meta
       property="og:title"
-      content={title ? title : "DormDev - Home of student developers"}
+      content={title || 'DormDev - Home of student developers'}
     />
     <meta
       property="og:description"
       content={
-        description
-          ? description
-          : "The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+        description ||
+        'The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers.'
       }
     />
     <meta
       property="og:image"
       content={
-        ogImage
-          ? ogImage
-          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+        ogImage ||
+        'https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350'
       }
     />
 
@@ -44,22 +42,20 @@ export default ({ title, description, ogImage }) => (
     <meta property="twitter:url" content="https:/dormdev.com" />
     <meta
       property="twitter:title"
-      content={title ? title : "DormDev - Home of student developers"}
+      content={title || 'DormDev - Home of student developers'}
     />
     <meta
       property="twitter:description"
       content={
-        description
-          ? description
-          : "The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+        description ||
+        'The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers.'
       }
     />
     <meta
       property="twitter:image"
       content={
-        ogImage
-          ? ogImage
-          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+        ogImage ||
+        'https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350'
       }
     />
 
@@ -147,4 +143,12 @@ export default ({ title, description, ogImage }) => (
       rel="stylesheet"
     />
   </Head>
-);
+)
+
+DocumentHead.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  ogImage: PropTypes.string
+}
+
+export default DocumentHead

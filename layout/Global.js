@@ -1,11 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import "focus-visible";
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import 'focus-visible'
 
-const Layout = styled.div`
-  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+const StyledLayout = styled.div`
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
   min-height: 100vh;
   background-color: #fffefc;
   display: flex;
@@ -123,117 +124,121 @@ const Layout = styled.div`
     height: 1px;
     margin: 2rem 0;
   }
-`;
+`
 
-export default props => {
-  return (
-    <Layout className="page-layout">
-      {props.children}
-      <style jsx global>{`
-        :root {
-          --grey1: hsl(0, 0%, 13%);
-          --grey2: hsl(0, 0%, 23%);
-          --grey3: hsl(0, 0%, 32%);
-          --grey4: hsl(0, 0%, 38%);
-          --grey5: hsl(0, 0%, 49%);
-          --grey6: hsl(0, 0%, 62%);
-          --grey7: hsl(0, 0%, 69%);
-          --grey8: hsl(0, 0%, 81%);
-          --grey9: hsl(0, 0%, 88%);
-          --grey10: hsl(0, 0%, 97%);
-        }
+const Layout = ({ children }) => (
+  <StyledLayout className="page-layout">
+    {children}
+    <style jsx global>{`
+      :root {
+        --grey1: hsl(0, 0%, 13%);
+        --grey2: hsl(0, 0%, 23%);
+        --grey3: hsl(0, 0%, 32%);
+        --grey4: hsl(0, 0%, 38%);
+        --grey5: hsl(0, 0%, 49%);
+        --grey6: hsl(0, 0%, 62%);
+        --grey7: hsl(0, 0%, 69%);
+        --grey8: hsl(0, 0%, 81%);
+        --grey9: hsl(0, 0%, 88%);
+        --grey10: hsl(0, 0%, 97%);
+      }
 
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
-        }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
 
-        ul[class],
-        ol[class] {
-          padding: 0;
-        }
+      ul[class],
+      ol[class] {
+        padding: 0;
+      }
 
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        p,
-        ul[class],
-        ol[class],
-        li,
-        figure,
-        figcaption,
-        blockquote,
-        dl,
-        dd {
-          margin: 0;
-        }
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      ul[class],
+      ol[class],
+      li,
+      figure,
+      figcaption,
+      blockquote,
+      dl,
+      dd {
+        margin: 0;
+      }
 
-        body {
-          min-height: 100vh;
-          scroll-behavior: smooth;
-          text-rendering: optimizeSpeed;
-          line-height: 1.5;
-        }
+      body {
+        min-height: 100vh;
+        scroll-behavior: smooth;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+      }
 
-        ul[class],
-        ol[class] {
-          list-style: none;
-        }
+      ul[class],
+      ol[class] {
+        list-style: none;
+      }
 
-        a:not([class]) {
-          text-decoration-skip-ink: auto;
-        }
+      a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
 
-        img {
-          max-width: 100%;
-          display: block;
-        }
+      img {
+        max-width: 100%;
+        display: block;
+      }
 
-        article > * + * {
-          margin-top: 1em;
-        }
+      article > * + * {
+        margin-top: 1em;
+      }
 
-        input,
-        button,
-        textarea,
-        select {
-          font: inherit;
-        }
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
 
-        @media (prefers-reduced-motion: reduce) {
-          * {
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-            transition-duration: 0.01ms !important;
-            scroll-behavior: auto !important;
-          }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
         }
+      }
 
-        *:focus:not(.focus-visible) {
-          outline: none;
-        }
+      *:focus:not(.focus-visible) {
+        outline: none;
+      }
 
-        .focus-visible {
-          outline: #0070f3 solid 2px;
-        }
+      .focus-visible {
+        outline: #0070f3 solid 2px;
+      }
 
-        .popover {
-          box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 30px 0px;
-          border-radius: 5px;
-        }
-        .popover > * {
-          font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI",
-            Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-            "Segoe UI Emoji", "Segoe UI Symbol";
-          background: white;
-          padding: 1.5rem;
-          display: flex;
-          flex-direction: column;
-        }
-      `}</style>
-    </Layout>
-  );
-};
+      .popover {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 30px 0px;
+        border-radius: 5px;
+      }
+      .popover > * {
+        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+          'Segoe UI Emoji', 'Segoe UI Symbol';
+        background: white;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+      }
+    `}</style>
+  </StyledLayout>
+)
+
+Layout.propTypes = {
+  children: PropTypes.node
+}
+
+export default Layout

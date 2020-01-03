@@ -1,0 +1,16 @@
+// Workspace Settings for VSCode
+// Extends Wes Bos' configs → https://github.com/wesbos/eslint-config-wesbos#with-vs-code
+
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

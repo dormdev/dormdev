@@ -21,7 +21,7 @@
     <img alt="" src="https://img.shields.io/github/package-json/dependency-version/dormdev/dormdev/next?style=flat-square&logo=Next.js&labelColor=000000&logoWidth=20">
   </a>
   <a aria-label="Node.js Version" href="https://github.com/nodejs/node">
-    <img src="https://img.shields.io/badge/node-10.x-blue?style=flat-square">
+    <img src="https://img.shields.io/badge/node-12.x-blue?style=flat-square">
   </a>
   <a aria-label="DormDev Version" href="./package.json#L3">
     <img src="https://img.shields.io/github/package-json/v/dormdev/dormdev?style=flat-square">

@@ -1,8 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-const Stack = styled.div`
-  --space: ${props => props.space || "1.5rem"};
+const StyledStack = styled.div`
+  --space: ${props => props.space || '1.5rem'};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,14 +47,23 @@ const Stack = styled.div`
           margin-top: var(--space);
         }
     `}
-`;
+`
 
-export default props => {
-  const { children, space, recursive, splitAfter } = props;
+const Stack = props => {
+  const { children, space, recursive, splitAfter } = props
 
   return (
-    <Stack space={space} recursive={recursive} splitAfter={splitAfter}>
+    <StyledStack space={space} recursive={recursive} splitAfter={splitAfter}>
       {children}
-    </Stack>
-  );
-};
+    </StyledStack>
+  )
+}
+
+Stack.propTypes = {
+  children: PropTypes.node,
+  space: PropTypes.string,
+  recursive: PropTypes.bool,
+  splitAfter: PropTypes.bool
+}
+
+export default Stack

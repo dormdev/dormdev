@@ -7,14 +7,14 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:10
+      - image: circleci/node:12
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo
+    working_directory: ~/dormdev
 
     steps:
       - checkout
@@ -35,3 +35,11 @@ jobs:
 
       # run tests!
       - run: yarn test
+
+      # Run Lighthouse Bot
+      # documented at https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/getting-started.md
+      - run: yarn run build
+      - run: sudo yarn global add @lhci/cli@0.3.x
+      - run:
+          name: lhci autorun
+          command: lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
