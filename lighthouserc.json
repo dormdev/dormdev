@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./public",
+      "staticDistDir": "./.next",
       "numberOfRuns": 3
     },
     "assert": {
