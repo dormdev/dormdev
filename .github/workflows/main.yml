@@ -14,5 +14,4 @@ jobs:
         with:
           urls: |
             https://dormdev-git-${{env.GITHUB_REF_SLUG}}.dorm-dev.now.sh
-          budgetPath: ./budgets.json
           temporaryPublicStorage: true
