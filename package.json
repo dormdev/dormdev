@@ -1,6 +1,9 @@
 {
   "name": "dormdev",
   "version": "0.1.0",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "test": "jest",
     "dev": "next",
@@ -9,7 +12,7 @@
   },
   "dependencies": {
     "focus-visible": "^5.0.2",
-    "next": "latest",
+    "next": "^9.0.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-feather": "^2.0.3",
