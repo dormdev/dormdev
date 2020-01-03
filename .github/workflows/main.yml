@@ -9,8 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: rlespinasse/github-slug-action@master
-      - uses: treosh/lighthouse-ci-action@v2
       - name: Run Lighthouse and test budgets
+        - uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
             https://dormdev-git-${{env.GITHUB_REF_SLUG}}.dorm-dev.now.sh
