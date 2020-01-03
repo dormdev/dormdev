@@ -35,12 +35,3 @@ jobs:
 
       # run tests!
       - run: yarn test
-w
-      # Run Lighthouse Bot
-      # documented at https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/getting-started.md
-      # Use `getStaticProps` to render statically at build time (SSG) when released: https://github.com/zeit/next.js/issues/9524
-      - run: yarn run build
-      - run: sudo yarn global add @lhci/cli@0.3.x
-      - run:
-          name: lhci autorun
-          command: lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
