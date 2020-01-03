@@ -11,11 +11,13 @@ const theme = {
 
 export default class MyApp extends App {
   componentDidMount() {
-    WebFont.load({
-      google: {
-        families: ['Rubik:300,400,500,700,900&display=swap']
-      }
-    })
+    if (typeof window !== 'undefined') {
+      WebFont.load({
+        google: {
+          families: ['Rubik:300,400,500,700,900&display=swap']
+        }
+      })
+    }
   }
 
   render() {
