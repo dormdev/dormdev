@@ -1,5 +1,6 @@
 import App from 'next/app'
 import React from 'react'
+import WebFont from 'webfontloader'
 import { ThemeProvider } from 'styled-components'
 
 const theme = {
@@ -9,6 +10,14 @@ const theme = {
 }
 
 export default class MyApp extends App {
+  componentDidMount() {
+    WebFont.load({
+      google: {
+        families: ['Rubik:300,400,500,700,900&display=swap']
+      }
+    })
+  }
+
   render() {
     const { Component, pageProps } = this.props
     return (

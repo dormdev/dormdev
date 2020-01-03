@@ -21,7 +21,8 @@
     "react-dom": "^16.7.0",
     "react-feather": "^2.0.3",
     "react-tiny-popover": "^4.0.0",
-    "styled-components": "^4.0.0"
+    "styled-components": "^4.0.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
