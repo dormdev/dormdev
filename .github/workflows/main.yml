@@ -8,14 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Extract branch name
-        shell: bash
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
-        id: extract_branch
       - name: Run Lighthouse and test budgets
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://dormdev-git-${{ steps.extract_branch.outputs.branch }}.dorm-dev.now.sh
+            https://dormdev-git-${GITHUB_REF#refs/heads/}.dorm-dev.now.sh
           budgetPath: ./budgets.json
           temporaryPublicStorage: true
