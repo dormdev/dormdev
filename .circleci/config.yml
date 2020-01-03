@@ -26,7 +26,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn install
+      - run: yarn
 
       - save_cache:
           paths:
@@ -42,4 +42,4 @@ jobs:
       - run: sudo yarn global add @lhci/cli@0.3.x
       - run:
           name: lhci autorun
-          command: lhci autorun --upload.target=temporary-public-storage || echo "LHCI failed!"
+          command: lhci autorun --staticDistDir="./public" --upload.target=temporary-public-storage || echo "LHCI failed!"
