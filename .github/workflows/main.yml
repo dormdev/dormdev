@@ -16,6 +16,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            dormdev-git-${{ steps.extract_branch.outputs.branch }}.dorm-dev.now.sh
+            https://dormdev-git-${{ steps.extract_branch.outputs.branch }}.dorm-dev.now.sh
           budgetPath: ./budgets.json
           temporaryPublicStorage: true
