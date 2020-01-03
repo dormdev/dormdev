@@ -8,12 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: rlespinasse/github-slug-action@master
       - name: Run Lighthouse and test budgets
         uses: treosh/lighthouse-ci-action@v2
         with:
           urls: |
-            https://dormdev-git-$BRANCH.dorm-dev.now.sh
+            https://dormdev-git-${{env.GITHUB_HEAD_REF_SLUG}}.dorm-dev.now.sh
           budgetPath: ./budgets.json
           temporaryPublicStorage: true
-        env:
-          BRANCH: ${{ github.event.pull_request.head.ref }}
