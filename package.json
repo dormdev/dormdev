@@ -20,6 +20,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-feather": "^2.0.3",
+    "react-image-webp": "^0.6.0",
     "react-tiny-popover": "^4.0.0",
     "styled-components": "^4.0.0"
   },

@@ -7077,7 +7077,7 @@ react-addons-test-utils@^15.6.2:
   resolved "https://registry.yarnpkg.com/react-addons-test-utils/-/react-addons-test-utils-15.6.2.tgz#c12b6efdc2247c10da7b8770d185080a7b047156"
   integrity sha1-wStu/cIkfBDae4dw0YUICnsEcVY=
 
-react-dom@^16.7.0:
+react-dom@^16.10.2, react-dom@^16.7.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.12.0.tgz#0da4b714b8d13c2038c9396b54a92baea633fe11"
   integrity sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
@@ -7098,6 +7098,14 @@ react-feather@^2.0.3:
   integrity sha512-XVjtxIyMxb2RFlqC2APoB/IZvXKDW9uLN1c264XEeZNYe8jIxjQVQpeTo3nxtHiLTgMfgf0ZYxJC6HwmY8+9BA==
   dependencies:
     prop-types "^15.7.2"
+
+react-image-webp@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-image-webp/-/react-image-webp-0.6.0.tgz#0650c901b9b23906cfd8e05f344872df1ad2411a"
+  integrity sha512-sVDBlFDKRN/VmDsePNFHJFRKqJXC3f/1Bnv7E7CcqlzcJoRnVs39WK8LrKt9ry3EMm4HINlAZNjRJt2KZ/Rj0g==
+  dependencies:
+    react "^16.10.2"
+    react-dom "^16.10.2"
 
 react-is@16.8.6:
   version "16.8.6"
@@ -7124,7 +7132,7 @@ react-tiny-popover@^4.0.0:
   resolved "https://registry.yarnpkg.com/react-tiny-popover/-/react-tiny-popover-4.0.0.tgz#648455bd8803434e0dcf04acc65ab6e3a4c42e75"
   integrity sha512-9eTzEughY47VRZ7nNGfvvTLaBZfAIb+VGd+F/tmOCZE8Hi839fGC2P7UbCs+oz/e7xPfQzvB+Myq43C4Af80fQ==
 
-react@^16.7.0:
+react@^16.10.2, react@^16.7.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
   integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==

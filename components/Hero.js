@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import { isWebpSupported } from 'react-image-webp/dist/utils'
 
 const Hero = styled.section`
   text-align: center;
@@ -69,7 +70,12 @@ export default () => (
     <div style={{ position: 'relative' }}>
       <Girl src="/assets/girl.svg" alt="" />
       <Boy src="/assets/boy.svg" alt="" />
-      <img src="/assets/background.png" alt="" />
+      <img
+        src={
+          isWebpSupported ? '/assets/background.webp' : '/assets/background.png'
+        }
+        alt=""
+      />
     </div>
     <h1>Home of student developers.</h1>
     <p>
