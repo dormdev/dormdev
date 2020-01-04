@@ -954,6 +954,23 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@dormdev/eslint-config@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@dormdev/eslint-config/-/eslint-config-0.1.3.tgz#03f5f272412cda4528fcd3d1ba4d6cd4f5a9a12d"
+  integrity sha512-XOIr9+rZjuwBObBTDpD7TjIlZbOnpa+O/8D7G4O+eTMVzO3QiX0OhZilwuEAnH0JGbnc401xxuoHJUCKlgG/Vw==
+  dependencies:
+    babel-eslint "^10.0.3"
+    eslint "^6.8.0"
+    eslint-config-airbnb "^18.0.1"
+    eslint-config-prettier "^6.9.0"
+    eslint-plugin-html "^6.0.0"
+    eslint-plugin-import "^2.19.1"
+    eslint-plugin-jsx-a11y "^6.2.3"
+    eslint-plugin-prettier "^3.1.2"
+    eslint-plugin-react "^7.17.0"
+    eslint-plugin-react-hooks "^2.3.0"
+    prettier "^1.19.1"
+
 "@emotion/is-prop-valid@^0.8.1":
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.5.tgz#2dda0791f0eafa12b7a0a5b39858405cc7bde983"
@@ -3239,11 +3256,6 @@ eslint-config-prettier@^6.9.0:
   integrity sha512-k4E14HBtcLv0uqThaI6I/n1LEqROp8XaPu6SO9Z32u5NlGRC07Enu1Bh2KEFw4FNHbekH8yzbIU9kUGxbiGmCA==
   dependencies:
     get-stdin "^6.0.0"
-
-eslint-config-wesbos@^0.0.19:
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/eslint-config-wesbos/-/eslint-config-wesbos-0.0.19.tgz#e89a7ce5c27562295234088176346daf2b12e8b7"
-  integrity sha512-2NTh0BzSMd1VEE5jEgC40T3QQTrdCEe19mm15m/CV1/314lYtPp5GmM2t26AojxrjfKhBkJR9Thiv6w1U8i/zg==
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
@@ -8562,11 +8574,6 @@ wcwidth@^1.0.1:
   integrity sha1-8LDc+RW8X/FSivrbLA4XtTLaL+g=
   dependencies:
     defaults "^1.0.3"
-
-webfontloader@^1.6.28:
-  version "1.6.28"
-  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
-  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webidl-conversions@^4.0.2:
   version "4.0.2"

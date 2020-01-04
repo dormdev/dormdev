@@ -11,7 +11,7 @@ const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     color: black;
 
     &:hover {
@@ -349,7 +349,7 @@ export default () => {
               <li>
                 <Link href="/join">
                   <a tabIndex={-1}>
-                    <Button width="100%" centered>
+                    <Button width="100%" fontWeight="600" centered>
                       Join
                     </Button>
                   </a>
@@ -503,7 +503,7 @@ export default () => {
         </Link>
         <Link href="/join">
           <a tabIndex={-1}>
-            <Button>Join</Button>
+            <Button fontWeight="600">Join</Button>
           </a>
         </Link>
       </Nav>

@@ -9,18 +9,6 @@ const theme = {
 }
 
 export default class MyApp extends App {
-  componentDidMount() {
-    if (typeof window !== 'undefined') {
-      import('webfontloader').then(WebFont => {
-        WebFont.load({
-          google: {
-            families: ['Rubik:300,400,500,700,900&display=swap']
-          }
-        })
-      })
-    }
-  }
-
   render() {
     const { Component, pageProps } = this.props
     return (

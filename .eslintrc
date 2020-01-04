@@ -1,12 +1,8 @@
 // ESLint Rules
-// Extends Wes Bos' configs → https://github.com/wesbos/eslint-config-wesbos/blob/master/.eslintrc.js
 
 {
-  "extends": ["wesbos"],
+  "extends": ["@dormdev/eslint-config"],
   "rules": {
-    "import/no-unresolved": "off",
-    "react/display-name": "off",
-    "react/jsx-props-no-spreading": "off",
     "prettier/prettier": [
       "error",
       {

@@ -4,9 +4,8 @@ import styled from 'styled-components'
 import 'focus-visible'
 
 const StyledLayout = styled.div`
-  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   min-height: 100vh;
   background-color: #fffefc;
   display: flex;
@@ -96,7 +95,7 @@ const StyledLayout = styled.div`
 
   p {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
 
     @media screen and (min-width: 20rem) {
       font-size: calc(1rem + 0.25 * ((100vw - 20rem) / 50));
@@ -225,9 +224,9 @@ const Layout = ({ children }) => (
         border-radius: 5px;
       }
       .popover > * {
-        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-          Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-          'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+          'Segoe UI Symbol';
         background: white;
         padding: 1.5rem;
         display: flex;
