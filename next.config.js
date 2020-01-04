@@ -3,7 +3,7 @@ const withOffline = require('next-offline')
 const nextConfig = {
   target: 'serverless',
   workboxOpts: {
-    swDest: 'static/service-worker.js',
+    swDest: 'public/static/service-worker.js',
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,
