@@ -1,3 +1,4 @@
+const path = require('path')
 const withOffline = require('next-offline')
 
 const nextConfig = {
@@ -5,7 +6,7 @@ const nextConfig = {
   transformManifest: manifest => ['/'].concat(manifest),
   generateInDevMode: true,
   workboxOpts: {
-    swDest: '../public/service-worker.js',
+    swDest: path.join(__dirname, 'public/service-worker.js'),
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,
