@@ -5,7 +5,7 @@ const nextConfig = {
   transformManifest: manifest => ['/'].concat(manifest),
   generateInDevMode: true,
   workboxOpts: {
-    swDest: 'public/static/service-worker.js',
+    swDest: 'public/service-worker.js',
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,
