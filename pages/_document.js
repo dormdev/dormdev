@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import Manifest from 'next-manifest/manifest'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -31,7 +32,13 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <Manifest
+            href="/manifest.json"
+            themeColor="#F0F0F0"
+            initialScale="1"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />

@@ -1,22 +1,22 @@
 {
-	"name": "DormDev",
-	"short_name": "Short name for Icon and Task",
-	"icons": [
-		{
-			"src": "/assets/icons192.png",
-			"type": "image/png",
-			"sizes": "192x192"
-		},
-		{
-			"src": "/assets/icons512.png",
-			"type": "image/png",
-			"sizes": "512x512"
-		}
-	],
-	"start_url": "/?utm_source=web_app_manifest",
-	"display": "standalone",
-	"orientation": "natural",
-	"background_color": "#FFFFFF",
-	"theme_color": "#FFFFFF",
-	"description": "Home of student developers."
+  "name": "DormDev",
+  "short_name": "Home of student developers",
+  "icons": [
+    {
+      "src": "/assets/icons192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icons512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=web_app_manifest",
+  "display": "standalone",
+  "orientation": "natural",
+  "background_color": "#FFFEFC",
+  "theme_color": "#FFFEFC",
+  "description": "Home of student developers."
 }
