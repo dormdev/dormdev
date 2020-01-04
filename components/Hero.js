@@ -1,5 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
+import ProgressiveImage from 'react-progressive-image'
+
 import { isWebpSupported } from 'react-image-webp/dist/utils'
 
 const Hero = styled.section`
@@ -70,12 +72,14 @@ export default () => (
     <div style={{ position: 'relative' }}>
       <Girl src="/assets/girl.svg" alt="" />
       <Boy src="/assets/boy.svg" alt="" />
-      <img
+      <ProgressiveImage
         src={
           isWebpSupported ? '/assets/background.webp' : '/assets/background.png'
         }
-        alt=""
-      />
+        placeholder="/assets/background-placeholder.png"
+      >
+        {src => <img src={src} alt="" />}
+      </ProgressiveImage>
     </div>
     <h1>Home of student developers.</h1>
     <p>
