@@ -1,6 +1,7 @@
 {
   "name": "DormDev",
-  "short_name": "Home of student developers",
+  "short_name": "DormDev",
+  "description": "Home of student developers",
   "icons": [
     {
       "src": "/assets/icons192.png",
@@ -17,6 +18,5 @@
   "display": "standalone",
   "orientation": "natural",
   "background_color": "#FFFEFC",
-  "theme_color": "#FFFEFC",
-  "description": "Home of student developers."
+  "theme_color": "#FFFEFC"
 }
