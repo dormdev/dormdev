@@ -21,13 +21,13 @@ const manifest = {
   ]
 }
 
-module.exports = withManifest(
-  withOffline(
-    withSourceMaps({
-      manifest,
-      workboxOpts: {
-        swDest: path.join(__dirname, 'public/service-worker.js')
-      }
-    })
-  )
-)
+const config = {
+  manifest,
+  workboxOpts: {
+    swDest: path.join(__dirname, 'public/service-worker.js')
+  }
+}
+
+const wrappedConfig = withManifest(withOffline(withSourceMaps(config)))
+
+module.exports = wrappedConfig
