@@ -42,7 +42,7 @@ export const Logo = () => (
   </LogoContainer>
 )
 
-const Header = styled.header`
+const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -321,7 +321,7 @@ export default () => {
   }
 
   return (
-    <Header>
+    <StyledHeader>
       <Logo />
       <ContextualMenu>
         {menu ? (
@@ -393,7 +393,11 @@ export default () => {
             </ul>
           </List>
         ) : (
-          <Menu size={32} onClick={() => setMenu(true)} />
+          <Menu
+            style={{ marginTop: '0.3rem' }}
+            size={36}
+            onClick={() => setMenu(true)}
+          />
         )}
       </ContextualMenu>
       <Nav>
@@ -507,6 +511,6 @@ export default () => {
           </a>
         </Link>
       </Nav>
-    </Header>
+    </StyledHeader>
   )
 }

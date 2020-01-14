@@ -6,6 +6,7 @@ const withSourceMaps = require('@zeit/next-source-maps')
 const manifest = {
   output: path.join(__dirname, 'public'),
   name: 'DormDev',
+  short_name: 'DormDev',
   description: 'Home of student developers.',
   icons: [
     {

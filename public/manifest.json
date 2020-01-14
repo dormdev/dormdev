@@ -1,6 +1,6 @@
 {
 	"name": "DormDev",
-	"short_name": "Short name for Icon and Task",
+	"short_name": "DormDev",
 	"icons": [
 		{
 			"src": "/assets/icon192.png",

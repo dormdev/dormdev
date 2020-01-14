@@ -2,6 +2,6 @@
   "presets": ["next/babel"],
   "plugins": [
     ["babel-plugin-root-import"],
-    ["styled-components", { "ssr": true }]
+    ["babel-plugin-styled-components", { "ssr": true }]
   ]
 }

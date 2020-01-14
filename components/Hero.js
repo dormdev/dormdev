@@ -4,17 +4,20 @@ import ProgressiveImage from 'react-progressive-image'
 
 import { isWebpSupported } from 'react-image-webp/dist/utils'
 
-const Hero = styled.section`
+export const StyledHero = styled.section`
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 900;
     margin: 3rem auto 2rem;
     max-width: 45rem;
 
     @media screen and (min-width: 20rem) {
-      font-size: calc(1rem + 3 * ((100vw - 20rem) / 50));
+      font-size: calc(2rem + 2 * ((100vw - 20rem) / 50));
     }
 
     @media screen and (min-width: 70rem) {
@@ -68,7 +71,7 @@ const Boy = styled.img`
 `
 
 export default () => (
-  <Hero>
+  <StyledHero>
     <div style={{ position: 'relative' }}>
       <Girl src="/assets/girl.svg" alt="" />
       <Boy src="/assets/boy.svg" alt="" />
@@ -86,5 +89,5 @@ export default () => (
       Showcasing the best learning, tools and resources – handpicked for quality
       with exclusive offers and discounts for students.
     </p>
-  </Hero>
+  </StyledHero>
 )
