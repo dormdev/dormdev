@@ -7,6 +7,7 @@ const StyledLayout = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   min-height: 100vh;
+  padding-bottom: 2rem;
   background-color: #fffefc;
   display: flex;
   flex-direction: column;
@@ -107,10 +108,19 @@ const StyledLayout = styled.div`
   }
 
   a {
+    font-size: 1rem;
+    font-weight: 400;
     color: black;
-    text-decoration: none;
-    font-size: calc(1rem + 4 * (100vw / 1000));
+    text-underline-position: under;
     cursor: pointer;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1rem + 0.25 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 1.25rem;
+    }
 
     &:hover {
       color: var(--grey3);

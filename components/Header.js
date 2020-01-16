@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
-import { ChevronDown, Menu, X } from 'react-feather'
 import Popover from 'react-tiny-popover'
+import { ChevronDown, Menu, X } from 'react-feather'
 
 import Button from './Button'
 
@@ -13,6 +13,7 @@ const LogoContainer = styled.div`
     font-size: 1.5rem;
     font-weight: 700;
     color: black;
+    text-decoration: none;
 
     &:hover {
       color: black;
@@ -43,11 +44,16 @@ export const Logo = () => (
 )
 
 const StyledHeader = styled.header`
+  background-color: #fffefc;
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
   z-index: 99;
+  padding: 1rem;
+  border-bottom: 1px solid #fffefc;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 `
 
 const ContextualMenu = styled.div`
@@ -82,10 +88,11 @@ const List = styled.nav`
       a {
         display: block;
         position: relative;
-        font-size: 1.25rem;
+        font-size: 1rem;
         line-height: 2.35;
         width: 100%;
         color: black;
+        text-decoration: none;
 
         &:hover {
           color: var(--grey3);
@@ -122,6 +129,7 @@ const Nav = styled.nav`
     a {
       margin: 0 1rem;
       font-size: 0.9rem;
+      text-decoration: none;
     }
 
     hr {
@@ -320,6 +328,27 @@ export default () => {
     }, 0)
   }
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const headerElement = document.getElementsByTagName('header')[0]
+
+      window.onscroll = function() {
+        if (window.pageYOffset === 0) {
+          headerElement.style.borderBottom = '1px solid #fffefc'
+          headerElement.style.padding = '1rem'
+        } else {
+          headerElement.style.borderBottom = '1px solid var(--grey9)'
+          headerElement.style.padding = '0.3rem 1rem'
+        }
+      }
+    }
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.onscroll = null
+      }
+    }
+  }, [])
+
   return (
     <StyledHeader>
       <Logo />
@@ -370,11 +399,6 @@ export default () => {
               <li>
                 <Link href="/resources">
                   <a>Resources</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/about">
-                  <a>About</a>
                 </Link>
               </li>
               <hr />

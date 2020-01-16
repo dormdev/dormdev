@@ -4,6 +4,7 @@ import DocumentHead from '~/components/Head'
 import Global from '~/layout/Global'
 import Header from '~/components/Header'
 import Hero from '~/components/Hero'
+import Footer from '~/components/Footer'
 
 export default () => (
   <>
@@ -11,6 +12,7 @@ export default () => (
     <Global>
       <Header />
       <Hero />
+      <Footer />
     </Global>
   </>
 )

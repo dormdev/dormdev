@@ -5,6 +5,7 @@ import ProgressiveImage from 'react-progressive-image'
 import { isWebpSupported } from 'react-image-webp/dist/utils'
 
 export const StyledHero = styled.section`
+  margin-top: 7rem;
   text-align: center;
   display: flex;
   flex-direction: column;
