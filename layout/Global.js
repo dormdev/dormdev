@@ -230,6 +230,8 @@ const Layout = ({ children }) => (
       }
 
       .popover {
+        position: relative;
+        z-index: 100;
         box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 30px 0px;
         border-radius: 5px;
       }

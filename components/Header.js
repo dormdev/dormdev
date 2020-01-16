@@ -50,7 +50,7 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 99;
+  z-index: 10;
   padding: 1rem;
   border-bottom: 1px solid #fffefc;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
