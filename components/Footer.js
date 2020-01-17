@@ -82,7 +82,7 @@ const LogoBlock = styled(Block)`
 
   p,
   a.terms-privacy {
-    color: var(--grey5);
+    color: var(--grey4);
     font-size: 0.85rem;
   }
 
@@ -169,6 +169,11 @@ export default () => (
           <li>
             <Link href="/about">
               <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/mission">
+              <a>Mission</a>
             </Link>
           </li>
           <li>
