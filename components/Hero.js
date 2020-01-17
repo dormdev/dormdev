@@ -2,7 +2,9 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import ProgressiveImage from 'react-progressive-image'
 
-import { isWebpSupported } from 'react-image-webp/dist/utils'
+import { checkWebP } from '~/helpers/checkWebP'
+
+const webSupported = checkWebP()
 
 export const StyledHero = styled.section`
   margin-top: 7rem;
@@ -78,7 +80,7 @@ export default () => (
       <Boy src="/assets/boy.svg" alt="" />
       <ProgressiveImage
         src={
-          isWebpSupported ? '/assets/background.webp' : '/assets/background.png'
+          webSupported ? '/assets/background.webp' : '/assets/background.png'
         }
         placeholder="/assets/background-placeholder.png"
       >
