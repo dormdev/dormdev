@@ -75,6 +75,7 @@ export default () => {
     <>
       {dark && <DarkOverlay />}
       <StyledSlider
+        aria-label="Dark Mode slider"
         onClick={() => {
           toggleDark(!dark)
           document.body.style.backgroundColor = dark ? '#fffefc' : '#141310'
