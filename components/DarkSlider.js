@@ -9,10 +9,14 @@ const DarkOverlay = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: hsla(0, 0%, 92%, 1);
-  mix-blend-mode: difference;
   z-index: 9999;
-  pointer-events: none;
+
+  @supports (mix-blend-mode: difference) and (pointer-events: none) {
+    background: hsla(0, 0%, 92%, 1);
+    isolation: isolate;
+    mix-blend-mode: difference;
+    pointer-events: none;
+  }
 `
 
 const StyledSlider = styled.button`
@@ -67,8 +71,13 @@ export default () => {
 
   useEffect(() => {
     const darkMode = checkDarkMode()
-    toggleDark(darkMode)
-    document.body.style.backgroundColor = darkMode ? '#141310' : '#fffefc'
+    if (
+      CSS.supports('mix-blend-mode', 'difference') &&
+      CSS.supports('pointer-events', 'none')
+    ) {
+      toggleDark(darkMode)
+      document.body.style.backgroundColor = darkMode ? '#141310' : '#fffefc'
+    }
   }, [])
 
   return (
@@ -77,9 +86,14 @@ export default () => {
       <StyledSlider
         aria-label="Dark Mode slider"
         onClick={() => {
-          toggleDark(!dark)
-          document.body.style.backgroundColor = dark ? '#fffefc' : '#141310'
-          window.localStorage.setItem('darkMode', dark ? 'false' : 'true')
+          if (
+            CSS.supports('mix-blend-mode', 'difference') &&
+            CSS.supports('pointer-events', 'none')
+          ) {
+            toggleDark(!dark)
+            document.body.style.backgroundColor = dark ? '#fffefc' : '#141310'
+            window.localStorage.setItem('darkMode', dark ? 'false' : 'true')
+          }
         }}
         dark={dark}
       />
