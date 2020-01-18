@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 import { Logo } from './Header'
+import DarkSlider from './DarkSlider'
 
 const StyledFooter = styled.footer`
   margin-top: 4rem;
@@ -109,6 +110,7 @@ export default () => (
       <Link href="/terms-privacy">
         <a className="terms-privacy">Terms & Privacy</a>
       </Link>
+      <DarkSlider />
     </LogoBlock>
     <FooterNavigation>
       <Block>

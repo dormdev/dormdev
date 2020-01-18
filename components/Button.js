@@ -15,7 +15,6 @@ const StyledButton = styled.button`
   border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.2s ease 0s;
 
   background-color: ${props => props.backgroundColor || '#000'};
   color: ${props => props.textColor || '#fff'};

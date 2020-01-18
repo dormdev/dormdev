@@ -74,7 +74,7 @@ const Boy = styled.img`
 `
 
 export default () => (
-  <StyledHero>
+  <StyledHero aria-label="hero">
     <div style={{ position: 'relative' }}>
       <Girl src="/assets/girl.svg" alt="" />
       <Boy src="/assets/boy.svg" alt="" />
