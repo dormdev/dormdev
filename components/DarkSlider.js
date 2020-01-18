@@ -77,6 +77,7 @@ export default () => {
         onClick={() => {
           toggleDark(!dark)
           document.body.style.backgroundColor = dark ? '#fffefc' : '#141310'
+          window.localStorage.setItem('darkMode', dark ? 'false' : 'true')
         }}
         dark={dark}
       />
