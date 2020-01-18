@@ -331,9 +331,11 @@ export default () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const headerElement = document.getElementsByTagName('header')[0]
+      const headerPosition =
+        headerElement.offsetTop + headerElement.offsetHeight - 48
 
       window.onscroll = function() {
-        if (window.pageYOffset === 0) {
+        if (window.pageYOffset <= headerPosition) {
           headerElement.style.borderBottom = '1px solid #fffefc'
           headerElement.style.padding = '1rem'
         } else {
@@ -357,7 +359,13 @@ export default () => {
           <List>
             <ListHeader>
               <Logo />
-              <X size={36} onClick={() => setMenu(false)} />
+              <X
+                size={36}
+                onClick={() => {
+                  setMenu(false)
+                  document.body.style.overflow = 'auto'
+                }}
+              />
             </ListHeader>
             <ul>
               <li>
@@ -420,7 +428,10 @@ export default () => {
           <Menu
             style={{ marginTop: '0.3rem' }}
             size={36}
-            onClick={() => setMenu(true)}
+            onClick={() => {
+              setMenu(true)
+              document.body.style.overflow = 'hidden'
+            }}
           />
         )}
       </ContextualMenu>
