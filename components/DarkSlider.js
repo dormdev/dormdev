@@ -68,6 +68,7 @@ export default () => {
   useEffect(() => {
     const darkMode = checkDarkMode()
     toggleDark(darkMode)
+    document.body.style.backgroundColor = darkMode ? '#141310' : '#fffefc'
   }, [])
 
   return (
