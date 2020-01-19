@@ -155,6 +155,10 @@ const Layout = ({ children }) => (
         --grey10: hsl(0, 0%, 97%);
       }
 
+      ::selection {
+        background-color: cyan;
+      }
+
       *,
       *::before,
       *::after {
