@@ -138,6 +138,9 @@ const StyledLayout = styled.div`
 const Layout = ({ children }) => (
   <StyledLayout className="page-layout">
     {children}
+    <noscript style={{ textAlign: 'center', padding: '2rem' }}>
+      JavaScript is required for full website functionality.
+    </noscript>
     <style jsx global>{`
       :root {
         --grey1: hsl(0, 0%, 13%);
