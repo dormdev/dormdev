@@ -13,7 +13,6 @@ const DarkOverlay = styled.div`
 
   @supports (mix-blend-mode: difference) and (pointer-events: none) {
     background: hsla(0, 0%, 92%, 1);
-    isolation: isolate;
     mix-blend-mode: difference;
     pointer-events: none;
   }
@@ -25,7 +24,6 @@ const StyledSlider = styled.button`
   width: 4.5rem;
   height: 2.5rem;
   margin-top: 2rem;
-  cursor: pointer;
   border: 0;
   border-radius: 1.5rem;
   transition: 350ms;
@@ -35,6 +33,11 @@ const StyledSlider = styled.button`
       : 'linear-gradient(rgba(0, 0, 0, 0.025), rgba(255, 255, 255, 0)), #ddd'};
   box-shadow: 0 0.07rem 0.1rem -0.1rem rgba(0, 0, 0, 0.4) inset,
     0 0.05rem 0.08rem -0.01rem rgba(255, 255, 255, 0.7);
+  cursor: not-allowed;
+
+  @supports (mix-blend-mode: difference) and (pointer-events: none) {
+    cursor: pointer;
+  }
 
   &::before {
     position: absolute;

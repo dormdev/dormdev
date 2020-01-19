@@ -229,6 +229,10 @@ const Layout = ({ children }) => (
         outline: #0070f3 solid 2px;
       }
 
+      .isolate {
+        isolation: isolate;
+      }
+
       .popover {
         position: relative;
         z-index: 99;
