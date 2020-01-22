@@ -69,6 +69,7 @@ export default () => {
         <EmailInput
           type="email"
           name="email"
+          aria-label="Your Email"
           placeholder="Your Email"
           ref={emailRef}
         />

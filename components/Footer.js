@@ -146,13 +146,9 @@ export default () => (
             </a>
           </li>
           <li>
-            <a
-              href="https://github.com/dormdev/dormdev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open Source Repository
-            </a>
+            <Link href="/updates">
+              <a>Updates</a>
+            </Link>
           </li>
           <li>
             <a
