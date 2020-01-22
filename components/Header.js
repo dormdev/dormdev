@@ -81,6 +81,7 @@ const List = styled.nav`
     list-style: none;
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 
     li {
       margin-top: 1rem;
@@ -374,6 +375,7 @@ export default () => {
                     <Button
                       backgroundColor="#FFF"
                       textColor="#000"
+                      border="1px solid var(--grey7)"
                       width="100%"
                       centered
                       hover="border-color: black"

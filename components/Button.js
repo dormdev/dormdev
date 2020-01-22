@@ -10,10 +10,6 @@ const StyledButton = styled.button`
   box-sizing: border-box;
   text-decoration: none;
   padding: 0.5rem 2rem;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-  border-radius: 4px;
   cursor: pointer;
 
   background-color: ${props => props.backgroundColor || '#000'};
@@ -23,6 +19,8 @@ const StyledButton = styled.button`
   margin-top: ${props => props.marginTop};
   margin-bottom: ${props => props.marginBottom};
   width: ${props => props.width};
+  border: ${props => props.border || 'none'};
+  border-radius: ${props => props.borderRadius || '4px'};
 
   ${props =>
     props.centered &&
@@ -45,6 +43,7 @@ const Button = props => {
     textColor,
     fontSize,
     fontWeight,
+    border,
     borderRadius,
     marginTop,
     marginBottom,
@@ -60,6 +59,7 @@ const Button = props => {
       textColor={textColor}
       fontSize={fontSize}
       fontWeight={fontWeight}
+      border={border}
       borderRadius={borderRadius}
       marginTop={marginTop}
       marginBottom={marginBottom}
@@ -80,12 +80,13 @@ Button.propTypes = {
   textColor: PropTypes.string,
   fontSize: PropTypes.string,
   fontWeight: PropTypes.string,
+  border: PropTypes.string,
   borderRadius: PropTypes.string,
   marginTop: PropTypes.string,
   marginBottom: PropTypes.string,
   centered: PropTypes.bool,
   width: PropTypes.string,
-  hover: PropTypes.bool,
+  hover: PropTypes.string,
   onClick: PropTypes.func
 }
 

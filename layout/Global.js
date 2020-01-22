@@ -156,7 +156,7 @@ const Layout = ({ children }) => (
       }
 
       ::selection {
-        background-color: cyan;
+        background-color: #40c3f7;
       }
 
       *,
@@ -233,7 +233,7 @@ const Layout = ({ children }) => (
       }
 
       .focus-visible {
-        outline: #0070f3 solid 2px;
+        outline: #1992d4 solid 2px;
       }
 
       .isolate {
