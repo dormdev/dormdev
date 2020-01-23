@@ -126,6 +126,24 @@ export default () => (
               <a>Sign Up</a>
             </Link>
           </li>
+          <li>
+            <a
+              href="https://dorm.dev/medium"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://dorm.dev/youtube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Youtube Channel
+            </a>
+          </li>
         </ul>
       </Block>
       <Block>
@@ -138,25 +156,20 @@ export default () => (
           </li>
           <li>
             <a
-              href="https://dorm.dev/student-verification"
+              href="https://dorm.dev/studentstatus"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Student Verification
+              Student Status API
             </a>
           </li>
           <li>
-            <Link href="/updates">
-              <a>Updates</a>
-            </Link>
-          </li>
-          <li>
             <a
-              href="https://dorm.dev/releases"
+              href="https://dorm.dev/changelog"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Releases
+              Changelog
             </a>
           </li>
         </ul>
@@ -199,7 +212,7 @@ export default () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Status
+              Uptime Status
             </a>
           </li>
           <li>

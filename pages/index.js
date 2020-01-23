@@ -29,7 +29,7 @@ export default () => (
     <Global>
       <Header />
       <Hero />
-      <SubscribeSection>
+      <SubscribeSection aria-label="subscribe">
         <h5>Subscribe to the email newsletter!</h5>
         <Subscribe />
         <p>No spam, ever. Unsubscribe at any time.</p>
