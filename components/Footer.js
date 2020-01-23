@@ -141,7 +141,7 @@ export default () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Youtube Channel
+              YouTube Channel
             </a>
           </li>
         </ul>

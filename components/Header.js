@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import Popover from 'react-tiny-popover'
@@ -329,6 +329,14 @@ export default () => {
     }, 0)
   }
 
+  const handleResize = useCallback(() => {
+    const windowSize = window.innerWidth
+    if (menu === true && windowSize >= 885) {
+      setMenu(false)
+      document.body.style.overflow = 'auto'
+    }
+  }, [menu])
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const headerElement = document.getElementsByTagName('header')[0]
@@ -344,13 +352,16 @@ export default () => {
           headerElement.style.padding = '0.3rem 1rem'
         }
       }
+
+      window.addEventListener('resize', handleResize)
     }
     return () => {
       if (typeof window !== 'undefined') {
         window.onscroll = null
+        window.removeEventListener('resize', handleResize)
       }
     }
-  }, [])
+  }, [handleResize])
 
   return (
     <StyledHeader>
@@ -395,7 +406,7 @@ export default () => {
                 </Link>
               </li>
               <hr />
-              <Title>General</Title>
+              <Title>Main Navigation</Title>
               <li>
                 <Link href="/learning">
                   <a>Learning</a>
