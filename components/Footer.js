@@ -156,11 +156,11 @@ export default () => (
           </li>
           <li>
             <a
-              href="https://dorm.dev/studentstatus"
+              href="https://dorm.dev/verification"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Student Status API
+              Student Verification
             </a>
           </li>
           <li>
@@ -170,6 +170,15 @@ export default () => (
               rel="noopener noreferrer"
             >
               Changelog
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://status.dormdev.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Status
             </a>
           </li>
         </ul>
@@ -204,15 +213,6 @@ export default () => (
               rel="noopener noreferrer"
             >
               Help Center
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://status.dormdev.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Uptime Status
             </a>
           </li>
           <li>

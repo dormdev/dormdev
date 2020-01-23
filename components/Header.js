@@ -259,6 +259,9 @@ const ToolsPopover = () => (
         <Link href="/tools/workflow">
           <a>Workflow</a>
         </Link>
+        <Link href="/tools/prototyping">
+          <a>Prototyping</a>
+        </Link>
         <Link href="/tools/cloud">
           <a>Cloud Services</a>
         </Link>
