@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import { Logo } from './Header'
 import DarkSlider from './DarkSlider'
+import ChatLink from './ChatLink'
 
 const StyledFooter = styled.footer`
   margin-top: 4rem;
@@ -230,8 +231,11 @@ export default () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Chat with us
+              Open Chat
             </a>
+          </li>
+          <li>
+            <ChatLink />
           </li>
           <li>
             <a
@@ -239,7 +243,7 @@ export default () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Email us
+              Email Us
             </a>
           </li>
         </ul>

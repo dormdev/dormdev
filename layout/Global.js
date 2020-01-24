@@ -255,6 +255,10 @@ const Layout = ({ children }) => (
         display: flex;
         flex-direction: column;
       }
+
+      #crisp-chatbox > div > a {
+        display: none !important;
+      }
     `}</style>
   </StyledLayout>
 )
