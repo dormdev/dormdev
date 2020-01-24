@@ -8,8 +8,8 @@
   <a aria-label="Deployed on Zeit Now" href="https://github.com/apps/now">
     <img src="https://img.shields.io/badge/deployed-success.svg?style=flat-square&logo=ZEIT&labelColor=000000&logoWidth=20">
   </a>
-  <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev">
-    <img src="https://img.shields.io/circleci/project/github/badges/shields/master?style=flat-square">
+  <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev/tree/master">
+    <img src="https://img.shields.io/circleci/build/github/dormdev/dormdev/master?style=flat-square">
   </a>
   <a aria-label="Uptime status" href="https://status.dormdev.com">
     <img src="https://img.shields.io/uptimerobot/ratio/m784086893-5f638a54e5248faf8e7ec23d?style=flat-square">
