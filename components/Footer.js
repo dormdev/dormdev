@@ -231,7 +231,7 @@ export default () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              Open Chat
+              Community Chat
             </a>
           </li>
           <li>
