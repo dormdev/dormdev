@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev">
+  <a aria-label="CircleCI" href="https://circleci.com/gh/dormdev/dormdev/tree/master">
     <img src="https://img.shields.io/circleci/project/github/badges/shields/master?style=flat-square">
   </a>
   <a aria-label="PRs Welcome" href="https://github.com/dormdev/dormdev/blob/master/CONTRIBUTING.md">
