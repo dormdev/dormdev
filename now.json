@@ -5,5 +5,10 @@
   "github": {
     "enabled": true,
     "autoAlias": true
+  },
+  "build": {
+    "env": {
+      "CRISP_ID": "@crisp_id"
+    }
   }
 }

@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 export default () => {
   useEffect(() => {
     window.$crisp = []
-    window.CRISP_WEBSITE_ID = '663c6c00-7181-49c3-b4e2-e7f0cc7f69b7'
+    window.CRISP_WEBSITE_ID = process.env.crispID
 
     const script = document.createElement('script')
     script.src = 'https://client.crisp.chat/l.js'

@@ -2,6 +2,11 @@ const path = require('path')
 const withOffline = require('next-offline')
 const withManifest = require('next-manifest')
 const withSourceMaps = require('@zeit/next-source-maps')
+require('dotenv').config()
+
+const env = {
+  crispID: process.env.CRISP_ID
+}
 
 const manifest = {
   output: path.join(__dirname, 'public'),
@@ -23,6 +28,7 @@ const manifest = {
 }
 
 const config = {
+  env,
   manifest,
   workboxOpts: {
     swDest: path.join(__dirname, 'public/service-worker.js')
