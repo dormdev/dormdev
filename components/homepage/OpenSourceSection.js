@@ -120,7 +120,7 @@ export default () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {starCount} stars on GitHub
+            {starCount} stars
           </a>
           <Star1 size={18} />
           <Star2 size={24} />

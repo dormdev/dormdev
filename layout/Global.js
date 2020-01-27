@@ -157,6 +157,7 @@ const Layout = ({ children }) => (
 
       ::selection {
         background-color: #40c3f7;
+        color: white;
       }
 
       *,
