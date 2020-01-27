@@ -1,39 +1,23 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import DocumentHead from '~/components/Head'
 import Global from '~/layout/Global'
 import Header from '~/components/Header'
-import Hero from '~/components/Hero'
-import Subscribe from '~/components/Subscribe'
 import Footer from '~/components/Footer'
-
-const SubscribeSection = styled.section`
-  text-align: center;
-
-  h5 {
-    margin-bottom: 1.5rem;
-  }
-
-  p {
-    margin-top: 1rem;
-    color: var(--grey4);
-    font-style: italic;
-    font-size: 1rem;
-  }
-`
+import HeroSection from '~/components/homepage/HeroSection'
+import SubscribeSection from '~/components/homepage/SubscribeSection'
+import FeaturedSection from '~/components/homepage/FeaturedSection'
+import OpenSourceSection from '~/components/homepage/OpenSourceSection'
 
 export default () => (
   <>
     <DocumentHead />
     <Global>
       <Header />
-      <Hero />
-      <SubscribeSection aria-label="subscribe">
-        <h5>Subscribe to the email newsletter!</h5>
-        <Subscribe />
-        <p>No spam, ever. Unsubscribe at any time.</p>
-      </SubscribeSection>
+      <HeroSection />
+      <SubscribeSection />
+      <FeaturedSection />
+      <OpenSourceSection />
       <Footer />
     </Global>
   </>

@@ -7,7 +7,7 @@ import DocumentHead from '~/components/Head'
 import Global from '~/layout/Global'
 import Header from '~/components/Header'
 import Button from '~/components/Button'
-import { StyledHero } from '~/components/Hero'
+import { StyledHero } from '~/components/homepage/HeroSection'
 
 const meditation = keyframes`
   from {

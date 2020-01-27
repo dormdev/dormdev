@@ -2,13 +2,12 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import ProgressiveImage from 'react-progressive-image'
 
-import { checkWebP } from '~/helpers/checkWebP'
+import { checkWebP } from '~/utilities/checkWebP'
 
 const webSupported = checkWebP()
 
 export const StyledHero = styled.section`
   margin-top: 7rem;
-  margin-bottom: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
