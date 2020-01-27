@@ -25,33 +25,46 @@ const StarCount = styled.div`
   margin: 2rem 0;
 
   a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+
+    @media screen and (min-width: 20rem) {
+      font-size: calc(1.25rem + 0.5 * ((100vw - 20rem) / 50));
+    }
+
+    @media screen and (min-width: 70rem) {
+      font-size: 1.75rem;
+    }
+
     font-weight: bold;
     text-decoration-style: double;
   }
 `
 
-const Star1 = styled(Star)`
+const StyledStar = styled(Star)`
   position: absolute;
+
+  @media screen and (max-width: 305px) {
+    display: none;
+  }
+`
+
+const Star1 = styled(StyledStar)`
   transform: rotate(25deg);
   left: -3.5rem;
 `
 
-const Star2 = styled(Star)`
-  position: absolute;
+const Star2 = styled(StyledStar)`
   transform: rotate(-25deg);
   right: -4rem;
 `
 
-const Star3 = styled(Star)`
-  position: absolute;
+const Star3 = styled(StyledStar)`
   transform: rotate(15deg);
   right: 1rem;
   top: -2.5rem;
 `
 
-const Star4 = styled(Star)`
-  position: absolute;
+const Star4 = styled(StyledStar)`
   transform: rotate(-15deg);
   left: 1rem;
   bottom: -2.5rem;
@@ -61,6 +74,7 @@ const ButtonActions = styled.div`
   margin-top: 3rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   * {
     margin-left: 0.15rem;
