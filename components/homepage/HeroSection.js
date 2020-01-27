@@ -32,6 +32,10 @@ export const StyledHero = styled.section`
     margin: 0 auto;
     padding: 0 1rem;
     max-width: 42rem;
+
+    @media all and (max-width: 499px) {
+      text-align: left;
+    }
   }
 `
 

@@ -5,13 +5,17 @@ import { Star } from 'react-feather'
 import { countRepoStars } from '~/utilities/countRepoStars'
 
 const OpenSourceSection = styled.section`
-  text-align: center;
   margin: 3rem 0 1rem;
+  text-align: center;
 
   p {
     margin: 2rem auto;
     padding: 0 1rem;
     max-width: 42rem;
+
+    @media all and (max-width: 499px) {
+      text-align: left;
+    }
   }
 `
 
