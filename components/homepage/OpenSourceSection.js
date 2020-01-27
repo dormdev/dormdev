@@ -27,6 +27,7 @@ const StarCount = styled.div`
   a {
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration-style: double;
   }
 `
 
@@ -96,7 +97,7 @@ export default () => {
       <h2>Open Source</h2>
       <p>
         DormDev™ is free and open source, under the Apache 2.0 license.
-        Contributions are welcomed and encouraged!
+        Contributions are welcomed!
       </p>
       {starCount && (
         <StarCount>
@@ -114,6 +115,15 @@ export default () => {
         </StarCount>
       )}
       <ButtonActions>
+        <a
+          className="github-button"
+          href="https://github.com/dormdev/dormdev/issues/new/choose"
+          data-icon="octicon-issue-opened"
+          data-size="large"
+          aria-label="Issue on GitHub"
+        >
+          Issue
+        </a>
         <a
           href="https://github.com/dormdev/dormdev/subscription"
           className="github-button"
