@@ -164,9 +164,14 @@ export default () => (
       <p style={{ marginTop: '0.5rem', marginBottom: '0.5rem' }}>
         © {new Date().getFullYear()} Dorm Dev, LLC
       </p>
-      <Link href="/terms-privacy">
-        <a className="terms-privacy">Terms & Privacy</a>
-      </Link>
+      <a
+        className="terms-privacy"
+        href="https://dorm.dev/terms"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Terms & Privacy
+      </a>
       <DarkSlider />
     </LogoBlock>
     <FooterNavigation>
