@@ -1,0 +1,14 @@
+// ESLint Rules
+
+{
+  "extends": ["@dormdev/eslint-config"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true
+      }
+    ]
+  }
+}

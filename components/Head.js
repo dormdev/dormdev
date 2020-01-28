@@ -1,87 +1,101 @@
-import Head from "next/head";
+import Head from 'next/head'
+import PropTypes from 'prop-types'
 
-export default ({ image }) => (
+const DocumentHead = ({ title, description, ogImage }) => (
   <Head>
-    <title>DormDev - Home of student developers</title>
-    <meta name="title" content="DormDev - Home of student developers" />
+    <title>{title || 'DormDev - Home of student developers'}</title>
+    <meta
+      name="title"
+      content={title || 'DormDev - Home of student developers'}
+    />
     <meta
       name="description"
-      content="The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+      content={
+        description ||
+        'The best learning, tools, resources and support. Be part of a community of dreamers, tinkerers, and changemakers.'
+      }
     />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https:/dormdev.com/" />
-    <meta property="og:title" content="DormDev - Home of student developers" />
+    <meta property="og:url" content="https:/dormdev.com" />
+    <meta
+      property="og:title"
+      content={title || 'DormDev - Home of student developers'}
+    />
     <meta
       property="og:description"
-      content="The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+      content={
+        description ||
+        'The best learning, tools, resources and support. Be part of a community of dreamers, tinkerers, and changemakers.'
+      }
     />
     <meta
       property="og:image"
       content={
-        image
-          ? image
-          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+        ogImage ||
+        'https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350'
       }
     />
 
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https:/dormdev.com/" />
+    <meta property="twitter:url" content="https:/dormdev.com" />
     <meta
       property="twitter:title"
-      content="DormDev - Home of student developers"
+      content={title || 'DormDev - Home of student developers'}
     />
     <meta
       property="twitter:description"
-      content="The best online courses, tools, and support. Be part of a community of dreamers, tinkerers, and changemakers."
+      content={
+        description ||
+        'The best learning, tools, resources and support. Be part of a community of dreamers, tinkerers, and changemakers.'
+      }
     />
     <meta
       property="twitter:image"
       content={
-        image
-          ? image
-          : "https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350"
+        ogImage ||
+        'https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350'
       }
     />
 
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="57x57"
       href="/favicons/apple-touch-icon-57x57.png"
     />
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="114x114"
       href="/favicons/apple-touch-icon-114x114.png"
     />
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="72x72"
       href="/favicons/apple-touch-icon-72x72.png"
     />
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="144x144"
       href="/favicons/apple-touch-icon-144x144.png"
     />
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="60x60"
       href="/favicons/apple-touch-icon-60x60.png"
     />
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="120x120"
       href="/favicons/apple-touch-icon-120x120.png"
     />
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="76x76"
       href="/favicons/apple-touch-icon-76x76.png"
     />
     <link
-      rel="apple-touch-icon-precomposed"
+      rel="apple-touch-icon"
       sizes="152x152"
       href="/favicons/apple-touch-icon-152x152.png"
     />
@@ -124,4 +138,12 @@ export default ({ image }) => (
     <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
   </Head>
-);
+)
+
+DocumentHead.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  ogImage: PropTypes.string
+}
+
+export default DocumentHead

@@ -1,0 +1,22 @@
+{
+	"name": "DormDev",
+	"short_name": "DormDev",
+	"icons": [
+		{
+			"src": "/assets/icon192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/assets/icon512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/?utm_source=web_app_manifest",
+	"display": "standalone",
+	"orientation": "natural",
+	"background_color": "#FFFFFF",
+	"theme_color": "#FFFFFF",
+	"description": "Home of student developers."
+}
