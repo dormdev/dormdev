@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react'
+import PropTypes from 'prop-types'
 
-export default () => {
+const ChatLink = props => {
+  const { children } = props
+
   useEffect(() => {
     window.$crisp = []
     window.CRISP_WEBSITE_ID = process.env.crispID
 
     const script = document.createElement('script')
     script.src = 'https://client.crisp.chat/l.js'
-    script.async = 1
-    document.getElementsByTagName('head')[0].appendChild(script)
+    script.async = true
+    document.head.appendChild(script)
 
     return () => {
       script.parentNode.removeChild(script)
@@ -24,7 +27,13 @@ export default () => {
         event.key === 'Enter' && window.$crisp.push(['do', 'chat:toggle'])
       }
     >
-      Message Us
+      {children || 'Message Us'}
     </a>
   )
 }
+
+ChatLink.propTypes = {
+  children: PropTypes.node
+}
+
+export default ChatLink

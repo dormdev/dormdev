@@ -5,6 +5,40 @@ import Link from 'next/link'
 import { Logo } from './Header'
 import DarkSlider from './DarkSlider'
 import ChatLink from './ChatLink'
+import ReleasesWidget from './ReleasesWidget'
+
+const StyledSmallFooter = styled.footer`
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+  color: var(--grey3);
+  text-align: center;
+
+  a {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--grey3);
+    text-decoration: underline;
+  }
+`
+
+const SmallLogo = styled.img`
+  margin: 0 auto 2rem;
+  width: 3rem;
+`
+
+export const SmallFooter = () => (
+  <StyledSmallFooter>
+    <hr />
+    <Link href="/">
+      <a>
+        <SmallLogo src="/assets/logo.svg" alt="" />
+      </a>
+    </Link>
+    Having Trouble?
+    <ChatLink>Send us a message</ChatLink>
+  </StyledSmallFooter>
+)
 
 const StyledFooter = styled.footer`
   margin-top: 4rem;
@@ -97,6 +131,15 @@ const LogoBlock = styled(Block)`
   }
 `
 
+const GreenCircle = styled.span`
+  margin-left: 0.35rem;
+  display: inline-block;
+  background: #3ebd93;
+  height: 9.6px;
+  width: 9.6px;
+  border-radius: 20px;
+`
+
 export default () => (
   <StyledFooter>
     <LogoBlock>
@@ -166,21 +209,16 @@ export default () => (
           </li>
           <li>
             <a
-              href="https://dorm.dev/changelog"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Changelog
-            </a>
-          </li>
-          <li>
-            <a
               href="https://status.dormdev.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               Status
+              <GreenCircle />
             </a>
+          </li>
+          <li>
+            <ReleasesWidget />
           </li>
         </ul>
       </Block>

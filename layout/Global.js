@@ -260,6 +260,23 @@ const Layout = ({ children }) => (
       #crisp-chatbox > div > a {
         display: none !important;
       }
+
+      #releases-widget {
+        position: relative;
+      }
+
+      #HW_badge_cont {
+        width: 100% !important;
+        position: absolute !important;
+        top: 0;
+      }
+
+      #HW_badge {
+        background: #2bb0ed !important;
+        top: 1px !important;
+        right: -1.2rem !important;
+        left: auto !important;
+      }
     `}</style>
   </StyledLayout>
 )

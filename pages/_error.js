@@ -6,6 +6,7 @@ import styled, { keyframes } from 'styled-components'
 import DocumentHead from '~/components/Head'
 import Global from '~/layout/Global'
 import Header from '~/components/Header'
+import { SmallFooter } from '~/components/Footer'
 import Button from '~/components/Button'
 import { StyledHero } from '~/components/homepage/HeroSection'
 
@@ -42,6 +43,7 @@ const Error = ({ statusCode }) => (
           </a>
         </Link>
       </StyledHero>
+      <SmallFooter />
     </Global>
   </>
 )

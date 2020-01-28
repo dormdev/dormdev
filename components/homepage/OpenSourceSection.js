@@ -97,9 +97,9 @@ export default () => {
 
     const script = document.createElement('script')
     script.src = 'https://buttons.github.io/buttons.js'
-    script.async = 1
-    script.defer = 1
-    document.getElementsByTagName('head')[0].appendChild(script)
+    script.async = true
+    script.defer = true
+    document.head.appendChild(script)
 
     return () => {
       script.parentNode.removeChild(script)
