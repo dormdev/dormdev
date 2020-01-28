@@ -13,6 +13,10 @@ export const StyledMain = styled.main`
   h1 {
     margin-bottom: 4rem;
   }
+
+  a {
+    margin: 1rem 0;
+  }
 `
 
 const StyledItem = styled.div`

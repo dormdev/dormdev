@@ -41,7 +41,7 @@ export default () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://frontendmasters.com/courses/design-for-developers
+                frontendmasters.com/courses/design-for-developers
               </a>
             </li>
           </ul>
@@ -71,7 +71,7 @@ export default () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://refactoringui.com/book
+                refactoringui.com/book
               </a>
             </li>
           </ul>

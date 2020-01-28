@@ -29,7 +29,7 @@ export default () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://leetcode.com/students
+                leetcode.com/students
               </a>
             </li>
           </ul>

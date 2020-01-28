@@ -40,7 +40,7 @@ export default () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://www.heroku.com/github-students
+                heroku.com/github-students
               </a>
             </li>
           </ul>

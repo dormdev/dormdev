@@ -139,7 +139,7 @@ export default () => {
           </Card>
         </a>
         <a
-          href="https://www.notion.so/students"
+          href="https://dorm.dev/notion"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -151,7 +151,7 @@ export default () => {
               width="125"
               margin="2rem auto"
             />
-            <p>Personal Plan ($4/month), free for students</p>
+            <p>Personal Plan, free for students + $10 credit!</p>
           </Card>
         </a>
         <a

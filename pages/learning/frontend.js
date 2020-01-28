@@ -39,7 +39,7 @@ export default () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://every-layout.dev
+                every-layout.dev
               </a>
             </li>
           </ul>
