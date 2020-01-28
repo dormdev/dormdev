@@ -92,12 +92,12 @@ export default () => {
         firstAndLastGutter
         showSlither
         leftChevron={
-          <ChevronButton type="button">
+          <ChevronButton type="button" aria-label="left chevron">
             <ChevronLeft size={28} />
           </ChevronButton>
         }
         rightChevron={
-          <ChevronButton type="button">
+          <ChevronButton type="button" aria-label="right chevron">
             <ChevronRight size={28} />
           </ChevronButton>
         }
