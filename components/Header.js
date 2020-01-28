@@ -182,7 +182,7 @@ const PopoverContentSection = styled.div`
   }
 `
 
-export const LinkLabel = styled.div`
+export const LinkLabel = styled.span`
   align-self: center;
   margin-bottom: 8px;
   padding: 1px 3px;

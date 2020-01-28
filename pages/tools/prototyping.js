@@ -49,7 +49,7 @@ export default () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                https://www.sketch.com/store/edu
+                sketch.com/store/edu
               </a>
             </li>
           </ul>

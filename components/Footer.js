@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 
-import { Logo } from './Header'
+import { Logo, LinkLabel } from './Header'
 import DarkSlider from './DarkSlider'
 import ChatLink from './ChatLink'
 import ReleasesWidget from './ReleasesWidget'
@@ -96,17 +96,25 @@ const Block = styled.div`
   }
 
   ul {
+    margin: 1.5rem 0;
     padding: 0;
     list-style: none;
   }
 
   li {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   a {
-    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: black;
     text-decoration: none;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: var(--grey3);
+    }
   }
 `
 
@@ -210,11 +218,12 @@ export default () => (
           </li>
           <li>
             <a
+              className="inactive"
               href="https://dorm.dev/verification"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Student Verification
+              Student Verification <LinkLabel>Soon</LinkLabel>
             </a>
           </li>
           <li>
