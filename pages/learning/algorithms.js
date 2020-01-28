@@ -24,13 +24,7 @@ export default () => (
             <li>Student Price – $99/yr, currently unavailable</li>
             <li>
               Link –{' '}
-              <a
-                href="https://leetcode.com/students"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                leetcode.com/students
-              </a>
+              <a href="https://leetcode.com/students">leetcode.com/students</a>
             </li>
           </ul>
         </Item>

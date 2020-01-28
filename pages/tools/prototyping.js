@@ -24,13 +24,7 @@ export default () => (
             <li>Student Price – Free Professional Plan ($15/month value)</li>
             <li>
               Link –{' '}
-              <a
-                href="https://www.figma.com/education"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                figma.com/education
-              </a>
+              <a href="https://www.figma.com/education">figma.com/education</a>
             </li>
           </ul>
         </Item>
@@ -44,11 +38,7 @@ export default () => (
             <li>Student Price – $49</li>
             <li>
               Link –{' '}
-              <a
-                href="https://www.sketch.com/store/edu"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.sketch.com/store/edu">
                 sketch.com/store/edu
               </a>
             </li>

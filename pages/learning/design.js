@@ -26,31 +26,19 @@ export default () => (
           <ul>
             <li>
               Student Price – Free through{' '}
-              <a
-                href="https://education.github.com/pack"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://education.github.com/pack">
                 GitHub Developer Pack
               </a>
             </li>
             <li>
               Link –{' '}
-              <a
-                href="https://frontendmasters.com/courses/design-for-developers"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://frontendmasters.com/courses/design-for-developers">
                 frontendmasters.com/courses/design-for-developers
               </a>
             </li>
           </ul>
         </Item>
-        <Item
-          logo="/assets/refactoringui.png"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Item logo="/assets/refactoringui.png">
           <h4>Refactoring UI</h4>
           <h6>Instructors: Adam Wathan & Steve Schoger</h6>
           <p>
@@ -66,11 +54,7 @@ export default () => (
             </li>
             <li>
               Link –{' '}
-              <a
-                href="https://refactoringui.com/book"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://refactoringui.com/book">
                 refactoringui.com/book
               </a>
             </li>

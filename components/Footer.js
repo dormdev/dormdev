@@ -164,12 +164,7 @@ export default () => (
       <p style={{ marginTop: '0.5rem', marginBottom: '0.5rem' }}>
         © {new Date().getFullYear()} Dorm Dev, LLC
       </p>
-      <a
-        className="terms-privacy"
-        href="https://dorm.dev/terms"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a className="terms-privacy" href="https://dorm.dev/terms">
         Terms & Privacy
       </a>
       <DarkSlider />
@@ -209,22 +204,10 @@ export default () => (
             </Link>
           </li>
           <li>
-            <a
-              href="https://dorm.dev/medium"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Medium Blog
-            </a>
+            <a href="https://dorm.dev/medium">Medium Blog</a>
           </li>
           <li>
-            <a
-              href="https://dorm.dev/youtube"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              YouTube Channel
-            </a>
+            <a href="https://dorm.dev/youtube">YouTube Channel</a>
           </li>
         </ul>
       </Block>
@@ -244,21 +227,12 @@ export default () => (
             </Link>
           </li>
           <li>
-            <a
-              className="inactive"
-              href="https://dorm.dev/verification"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="inactive" href="https://dorm.dev/verification">
               Student Verification <LinkLabel>Soon</LinkLabel>
             </a>
           </li>
           <li>
-            <a
-              href="https://status.dormdev.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://status.dormdev.com">
               Status
               <GreenCircle />
             </a>
@@ -292,43 +266,19 @@ export default () => (
         <h6>Support</h6>
         <ul>
           <li>
-            <a
-              href="https://dorm.dev/help"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Help Center
-            </a>
+            <a href="https://dorm.dev/help">Help Center</a>
           </li>
           <li>
-            <a
-              href="https://twitter.com/DormDev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter @DormDev
-            </a>
+            <a href="https://twitter.com/DormDev">Twitter @DormDev</a>
           </li>
           <li>
-            <a
-              href="https://spectrum.chat/dormdev?tab=chat"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Community Chat
-            </a>
+            <a href="https://spectrum.chat/dormdev?tab=chat">Community Chat</a>
           </li>
           <li>
             <ChatLink />
           </li>
           <li>
-            <a
-              href="mailto:support@dormdev.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Email Us
-            </a>
+            <a href="mailto:support@dormdev.com">Email Us</a>
           </li>
         </ul>
       </Block>

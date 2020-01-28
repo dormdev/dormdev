@@ -25,13 +25,7 @@ export default () => (
             </li>
             <li>
               Referral Link –{' '}
-              <a
-                href="https://dorm.dev/notion"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                dorm.dev/notion
-              </a>
+              <a href="https://dorm.dev/notion">dorm.dev/notion</a>
             </li>
           </ul>
         </Item>

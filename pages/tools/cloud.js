@@ -25,21 +25,13 @@ export default () => (
           <ul>
             <li>
               Student Price – Free Hobby Dyno ($168 value) through{' '}
-              <a
-                href="https://education.github.com/pack"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://education.github.com/pack">
                 GitHub Developer Pack
               </a>
             </li>
             <li>
               Link –{' '}
-              <a
-                href="https://www.heroku.com/github-students"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.heroku.com/github-students">
                 heroku.com/github-students
               </a>
             </li>

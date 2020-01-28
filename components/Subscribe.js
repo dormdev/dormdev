@@ -55,8 +55,6 @@ export default () => {
     } else {
       formRef.current.action = 'https://tinyletter.com/dormdev'
       formRef.current.method = 'post'
-      formRef.current.target = '_blank'
-      formRef.current.rel = 'noopener noreferrer'
       formRef.current.submit()
     }
 

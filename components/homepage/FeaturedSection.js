@@ -109,11 +109,7 @@ export default () => {
         }
         placeholderItem={<Card height="450px" />}
       >
-        <a
-          href="https://education.github.com/pack"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://education.github.com/pack">
           <Card height="450px">
             <h4>GitHub Student Developer Pack</h4>
             <CardImage
@@ -125,11 +121,7 @@ export default () => {
             <p>90+ premium developer tools, free for students</p>
           </Card>
         </a>
-        <a
-          href="https://edu.google.com/programs/students"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://edu.google.com/programs/students">
           <Card height="450px">
             <h4>Google for Students</h4>
             <CardImage
@@ -144,11 +136,7 @@ export default () => {
             </p>
           </Card>
         </a>
-        <a
-          href="https://dorm.dev/notion"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://dorm.dev/notion">
           <Card height="450px">
             <h4>Notion for Students</h4>
             <CardImage
@@ -160,11 +148,7 @@ export default () => {
             <p>Personal Plan, free for students + $10 credit!</p>
           </Card>
         </a>
-        <a
-          href="https://www.figma.com/education"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://www.figma.com/education">
           <Card height="450px">
             <h4>Figma for Students</h4>
             <CardImage

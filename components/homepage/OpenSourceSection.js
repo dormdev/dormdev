@@ -112,21 +112,13 @@ export default () => {
       <p>
         DormDev™ is free and open source, under the Apache 2.0 license.
         Contributors welcome!{' '}
-        <a
-          href="https://github.com/dormdev/dormdev/blob/master/CONTRIBUTING.md"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/dormdev/dormdev/blob/master/CONTRIBUTING.md">
           Learn how to contribute.
         </a>
       </p>
       {starCount && (
         <StarCount>
-          <a
-            href="https://github.com/dormdev/dormdev/stargazers"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/dormdev/dormdev/stargazers">
             {starCount} stars
           </a>
           <Star1 size={18} />

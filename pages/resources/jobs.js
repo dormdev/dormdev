@@ -25,13 +25,7 @@ export default () => (
           <ul>
             <li>
               Referral Link –{' '}
-              <a
-                href="https://dorm.dev/triplebyte"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                dorm.dev/triplebyte
-              </a>
+              <a href="https://dorm.dev/triplebyte">dorm.dev/triplebyte</a>
             </li>
           </ul>
         </Item>

@@ -368,27 +368,9 @@ const CommunityPopover = () => (
       <Title size="0.8rem" margin="0 0 0.5rem">
         Join the discussion
       </Title>
-      <a
-        href="https://spectrum.chat/dormdev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Spectrum
-      </a>
-      <a
-        href="https://www.facebook.com/groups/dormdev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Facebook Group
-      </a>
-      <a
-        href="https://www.reddit.com/r/DormDev"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Subreddit
-      </a>
+      <a href="https://spectrum.chat/dormdev">Spectrum</a>
+      <a href="https://www.facebook.com/groups/dormdev">Facebook Group</a>
+      <a href="https://www.reddit.com/r/DormDev">Subreddit</a>
     </PopoverContentSection>
   </PopoverContent>
 )
@@ -511,31 +493,15 @@ export default () => {
               <hr />
               <Title>Community</Title>
               <li>
-                <a
-                  href="https://spectrum.chat/dormdev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Spectrum
-                </a>
+                <a href="https://spectrum.chat/dormdev">Spectrum</a>
               </li>
               <li>
-                <a
-                  href="https://www.facebook.com/groups/dormdev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.facebook.com/groups/dormdev">
                   Facebook Group
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.reddit.com/r/DormDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Subreddit
-                </a>
+                <a href="https://www.reddit.com/r/DormDev">Subreddit</a>
               </li>
             </ul>
           </List>
