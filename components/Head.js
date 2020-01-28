@@ -34,7 +34,7 @@ const DocumentHead = ({ title, description, ogImage }) => (
       property="og:image"
       content={
         ogImage ||
-        'https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350'
+        'https://og-image.dormdev.com/**Home%20of%20student%20developers.**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fdormdev%2Fmaster%2Fpublic%2Fassets%2Flogo.png&widths=350&heights=350'
       }
     />
 
@@ -55,7 +55,7 @@ const DocumentHead = ({ title, description, ogImage }) => (
       property="twitter:image"
       content={
         ogImage ||
-        'https://og-image.dormdev.com/**DormDev**.png?theme=light&md=1&fontSize=150px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fassets%2Fmaster%2Flogo.png&widths=350&heights=350'
+        'https://og-image.dormdev.com/**Home%20of%20student%20developers.**.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fdormdev%2Fdormdev%2Fmaster%2Fpublic%2Fassets%2Flogo.png&widths=350&heights=350'
       }
     />
 
