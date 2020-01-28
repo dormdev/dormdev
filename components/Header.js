@@ -204,8 +204,8 @@ const LearningPopover = () => (
         <Link href="/learning/mobile">
           <a>Mobile</a>
         </Link>
-        <Link href="/learning/gaming">
-          <a>Gaming</a>
+        <Link href="/learning/game-development">
+          <a>Game Development</a>
         </Link>
         <Link href="/learning/ai">
           <a>AI / Machine Learning</a>
@@ -287,6 +287,9 @@ const ResourcesPopover = () => (
       <Title size="0.8rem" margin="0 0 0.5rem">
         Resources for Developers
       </Title>
+      <Link href="/resources">
+        <a>General</a>
+      </Link>
       <Link href="/resources/jobs">
         <a>Job Search</a>
       </Link>
@@ -309,9 +312,27 @@ const CommunityPopover = () => (
       <Title size="0.8rem" margin="0 0 0.5rem">
         Join the discussion
       </Title>
-      <a href="https://spectrum.chat/dormdev">Spectrum</a>
-      <a href="https://www.facebook.com/groups/dormdev">Facebook Group</a>
-      <a href="https://www.reddit.com/r/DormDev">Subreddit</a>
+      <a
+        href="https://spectrum.chat/dormdev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Spectrum
+      </a>
+      <a
+        href="https://www.facebook.com/groups/dormdev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Facebook Group
+      </a>
+      <a
+        href="https://www.reddit.com/r/DormDev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Subreddit
+      </a>
     </PopoverContentSection>
   </PopoverContent>
 )
@@ -428,15 +449,31 @@ export default () => {
               <hr />
               <Title>Community</Title>
               <li>
-                <a href="https://spectrum.chat/dormdev">Spectrum</a>
+                <a
+                  href="https://spectrum.chat/dormdev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Spectrum
+                </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/groups/dormdev">
+                <a
+                  href="https://www.facebook.com/groups/dormdev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Facebook Group
                 </a>
               </li>
               <li>
-                <a href="https://www.reddit.com/r/DormDev">Subreddit</a>
+                <a
+                  href="https://www.reddit.com/r/DormDev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Subreddit
+                </a>
               </li>
             </ul>
           </List>

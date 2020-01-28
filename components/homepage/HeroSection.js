@@ -8,6 +8,7 @@ const webSupported = checkWebP()
 
 export const StyledHero = styled.section`
   margin-top: 7rem;
+  margin-bottom: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
