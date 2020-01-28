@@ -23,7 +23,7 @@ export default () => {
 
       const config = {
         selector: '#releases-widget',
-        account: 'xGb28y'
+        account: process.env.headwayAccount
       }
 
       window.Headway.init(config)

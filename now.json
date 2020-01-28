@@ -8,7 +8,9 @@
   },
   "build": {
     "env": {
-      "CRISP_ID": "@crisp_id"
+      "CRISP_ID": "@crisp_id",
+      "HEADWAY_ACCOUNT": "@headway_account",
+      "TYPEFORM_SURVEY_ID": "@typeform_survey_id"
     }
   }
 }

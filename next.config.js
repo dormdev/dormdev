@@ -5,7 +5,9 @@ const withSourceMaps = require('@zeit/next-source-maps')
 require('dotenv').config()
 
 const env = {
-  crispID: process.env.CRISP_ID
+  crispID: process.env.CRISP_ID,
+  headwayAccount: process.env.HEADWAY_ACCOUNT,
+  typeformSurveyID: process.env.TYPEFORM_SURVEY_ID
 }
 
 const manifest = {
