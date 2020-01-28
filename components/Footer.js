@@ -14,6 +14,11 @@ const StyledSmallFooter = styled.footer`
   color: var(--grey3);
   text-align: center;
 
+  hr {
+    margin: 1rem auto 2rem;
+    max-width: 30rem;
+  }
+
   a {
     margin-left: 0.25rem;
     font-size: 0.9rem;

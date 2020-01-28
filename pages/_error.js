@@ -37,11 +37,6 @@ const Error = ({ statusCode }) => (
         <Meditating src="/assets/meditating.svg" alt="" />
         <h1>{statusCode || 'Client Error'}!</h1>
         <p>Oops! Nothing to see here.</p>
-        <Link href="/">
-          <a>
-            <Button marginTop="3rem">Go Home</Button>
-          </a>
-        </Link>
       </StyledHero>
       <SmallFooter />
     </Global>
