@@ -237,8 +237,10 @@ const Layout = ({ children }) => (
         outline: #1992d4 solid 2px;
       }
 
-      .isolate {
-        isolation: isolate;
+      .inactive {
+        pointer-events: none;
+        cursor: default;
+        opacity: 0.6;
       }
 
       .popover {

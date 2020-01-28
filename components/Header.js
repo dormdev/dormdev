@@ -182,6 +182,21 @@ const PopoverContentSection = styled.div`
   }
 `
 
+export const LinkLabel = styled.div`
+  align-self: center;
+  margin-bottom: 8px;
+  padding: 1px 3px;
+  background: ${props => props.bg || 'var(--grey3)'};
+  color: white;
+  border-radius: 3px;
+  margin-left: 0.25rem;
+  font-size: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+`
+
 const LearningPopover = () => (
   <PopoverContent id="learning-popover" role="menu" tabIndex={-1}>
     <Link href="/learning">
@@ -193,25 +208,39 @@ const LearningPopover = () => (
           High-Level
         </Title>
         <Link href="/learning/design">
-          <a>Design</a>
+          <a>
+            Design <LinkLabel bg="#3291ff">New</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/frontend">
-          <a>Frontend</a>
+          <a>
+            Frontend <LinkLabel bg="#3291ff">New</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/backend">
-          <a>Backend</a>
+          <a>
+            Backend <LinkLabel bg="#3291ff">New</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/mobile">
-          <a>Mobile</a>
+          <a className="inactive">
+            Mobile <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/game-development">
-          <a>Game Development</a>
+          <a className="inactive">
+            Game Development <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/ai">
-          <a>AI / Machine Learning</a>
+          <a className="inactive">
+            AI / Machine Learning <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/quantum">
-          <a>Quantum Computing</a>
+          <a className="inactive">
+            Quantum Computing <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
       </PopoverContentSection>
       <PopoverContentSection>
@@ -219,13 +248,19 @@ const LearningPopover = () => (
           Low-Level
         </Title>
         <Link href="/learning/algorithms">
-          <a>Algorithms</a>
+          <a>
+            Data Structures & Algorithms <LinkLabel bg="#3291ff">New</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/embedded-systems">
-          <a>Embedded Systems</a>
+          <a className="inactive">
+            Embedded Systems <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/robotics">
-          <a>Robotics</a>
+          <a className="inactive">
+            Robotics <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
       </PopoverContentSection>
       <PopoverContentSection>
@@ -233,13 +268,19 @@ const LearningPopover = () => (
           Systems
         </Title>
         <Link href="/learning/devops">
-          <a>DevOps</a>
+          <a className="inactive">
+            DevOps <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/security">
-          <a>Security</a>
+          <a className="inactive">
+            Security <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
         <Link href="/learning/blockchain">
-          <a>Blockchain</a>
+          <a className="inactive">
+            Blockchain <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
       </PopoverContentSection>
     </PopoverContentContainer>
@@ -257,13 +298,19 @@ const ToolsPopover = () => (
           Software
         </Title>
         <Link href="/tools/workflow">
-          <a>Workflow</a>
+          <a>
+            Workflow <LinkLabel bg="#3291ff">New</LinkLabel>
+          </a>
         </Link>
         <Link href="/tools/prototyping">
-          <a>Prototyping</a>
+          <a>
+            Prototyping <LinkLabel bg="#3291ff">New</LinkLabel>
+          </a>
         </Link>
         <Link href="/tools/cloud">
-          <a>Cloud Services</a>
+          <a>
+            Cloud Services <LinkLabel bg="#3291ff">New</LinkLabel>
+          </a>
         </Link>
       </PopoverContentSection>
       <PopoverContentSection>
@@ -271,10 +318,14 @@ const ToolsPopover = () => (
           Hardware
         </Title>
         <Link href="/tools/computers">
-          <a>Computer Parts</a>
+          <a className="inactive">
+            Computer Parts <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
         <Link href="/tools/sensors">
-          <a>Sensors</a>
+          <a className="inactive">
+            Sensors <LinkLabel>Soon</LinkLabel>
+          </a>
         </Link>
       </PopoverContentSection>
     </PopoverContentContainer>
@@ -287,20 +338,25 @@ const ResourcesPopover = () => (
       <Title size="0.8rem" margin="0 0 0.5rem">
         Resources for Developers
       </Title>
-      <Link href="/resources">
-        <a>General</a>
-      </Link>
       <Link href="/resources/jobs">
-        <a>Job Search</a>
+        <a>
+          Job Search <LinkLabel bg="#3291ff">New</LinkLabel>
+        </a>
       </Link>
       <Link href="/resources/interviews">
-        <a>Coding Interviews</a>
+        <a className="inactive">
+          Coding Interviews <LinkLabel>Soon</LinkLabel>
+        </a>
       </Link>
       <Link href="/resources/career">
-        <a>Career Development</a>
+        <a className="inactive">
+          Career Development <LinkLabel>Soon</LinkLabel>
+        </a>
       </Link>
       <Link href="/resources/startups">
-        <a>Startups</a>
+        <a className="inactive">
+          Startups <LinkLabel>Soon</LinkLabel>
+        </a>
       </Link>
     </PopoverContentSection>
   </PopoverContent>
@@ -404,7 +460,7 @@ export default () => {
               />
             </ListHeader>
             <ul>
-              <li>
+              {/* <li>
                 <Link href="/login">
                   <a tabIndex={-1}>
                     <Button
@@ -425,6 +481,15 @@ export default () => {
                   <a tabIndex={-1}>
                     <Button width="100%" fontWeight="600" centered>
                       Join
+                    </Button>
+                  </a>
+                </Link>
+              </li> */}
+              <li>
+                <Link href="/survey">
+                  <a tabIndex={-1}>
+                    <Button width="100%" fontWeight="600" centered>
+                      Survey
                     </Button>
                   </a>
                 </Link>
@@ -590,12 +655,17 @@ export default () => {
           </a>
         </Popover>
         <hr />
-        <Link href="/login">
+        {/* <Link href="/login">
           <a>Login</a>
         </Link>
         <Link href="/join">
           <a tabIndex={-1}>
             <Button fontWeight="600">Join</Button>
+          </a>
+        </Link> */}
+        <Link href="/survey">
+          <a tabIndex={-1}>
+            <Button fontWeight="600">Survey</Button>
           </a>
         </Link>
       </Nav>
