@@ -237,6 +237,13 @@ export default () => (
             </Link>
           </li>
           <li>
+            <Link href="/discounts">
+              <a className="inactive">
+                Offers & discounts <LinkLabel>Soon</LinkLabel>
+              </a>
+            </Link>
+          </li>
+          <li>
             <a
               className="inactive"
               href="https://dorm.dev/verification"

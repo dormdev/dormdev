@@ -439,6 +439,7 @@ export default () => {
       if (typeof window !== 'undefined') {
         window.onscroll = null
         window.removeEventListener('resize', handleResize)
+        document.body.style.overflow = 'auto'
       }
     }
   }, [handleResize])

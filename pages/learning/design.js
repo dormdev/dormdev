@@ -13,7 +13,7 @@ export default () => (
       <Header />
       <StyledMain>
         <h1>Learning Design</h1>
-        <Item logo="https://static.frontendmasters.com/assets/courses/2019-01-13-design-for-developers/thumb.jpg">
+        <Item logo="/assets/designfordevelopers.png">
           <h4>Design for Developers</h4>
           <h6>Instructor: Sarah Drasner</h6>
           <p>
@@ -47,7 +47,7 @@ export default () => (
           </ul>
         </Item>
         <Item
-          logo="https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/landing/book-cover-sm.png"
+          logo="/assets/refactoringui.png"
           target="_blank"
           rel="noopener noreferrer"
         >

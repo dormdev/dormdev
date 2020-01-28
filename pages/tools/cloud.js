@@ -13,7 +13,7 @@ export default () => (
       <Header />
       <StyledMain>
         <h1>Tools: Cloud Services</h1>
-        <Item logo="https://brand.heroku.com/static/media/heroku-logo-solid.ab0c1b46.svg">
+        <Item logo="/assets/heroku.png">
           <h4>Heroku</h4>
           <p>
             Heroku is a cloud-based, platform as a service (PaaS) for building,

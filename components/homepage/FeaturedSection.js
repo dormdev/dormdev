@@ -51,15 +51,21 @@ export default () => {
   const [numberOfCards, setCards] = useState(3)
 
   const handleResize = useCallback(() => {
-    if (window.innerWidth >= 1000 && numberOfCards === 2) {
+    if (
+      window.innerWidth >= 1000 &&
+      (numberOfCards === 1 || numberOfCards === 2)
+    ) {
       setCards(3)
     } else if (
       window.innerWidth < 1000 &&
       window.innerWidth >= 600 &&
-      (numberOfCards === 3 || numberOfCards === 1)
+      (numberOfCards === 1 || numberOfCards === 3)
     ) {
       setCards(2)
-    } else if (window.innerWidth < 600 && numberOfCards === 2) {
+    } else if (
+      window.innerWidth < 600 &&
+      (numberOfCards === 2 || numberOfCards === 3)
+    ) {
       setCards(1)
     }
   }, [numberOfCards])

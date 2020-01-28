@@ -16,6 +16,7 @@ export const StyledMain = styled.main`
 
   a {
     margin: 1rem 0;
+    overflow-wrap: break-word;
   }
 `
 
@@ -51,6 +52,10 @@ const StyledItem = styled.div`
       margin-right: 4rem;
       margin-bottom: 0;
     }
+  }
+
+  li {
+    margin: 0.5rem 0;
   }
 
   @media all and (min-width: 800px) {

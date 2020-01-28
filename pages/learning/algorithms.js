@@ -13,7 +13,7 @@ export default () => (
       <Header />
       <StyledMain>
         <h1>Learning Data Structures and Algorithms</h1>
-        <Item logo="https://leetcode.com/static/images/LeetCode_logo.png">
+        <Item logo="/assets/leetcode.png">
           <h4>LeetCode</h4>
           <p>
             Level up your coding skills and quickly land a job. This is the best

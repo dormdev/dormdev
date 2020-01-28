@@ -22,7 +22,7 @@ const OpenSourceSection = styled.section`
 const StarCount = styled.div`
   position: relative;
   display: inline-block;
-  margin: 2rem 0;
+  margin: 3rem 0;
 
   a {
     font-size: 1.25rem;
@@ -111,13 +111,13 @@ export default () => {
       <h2>Open Source</h2>
       <p>
         DormDev™ is free and open source, under the Apache 2.0 license.
-        Contributions are welcomed!{' '}
+        Contributors welcome!{' '}
         <a
           href="https://github.com/dormdev/dormdev/blob/master/CONTRIBUTING.md"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn How
+          Learn how to contribute.
         </a>
       </p>
       {starCount && (
