@@ -199,9 +199,9 @@ export const LinkLabel = styled.span`
 
 const LearningPopover = () => (
   <PopoverContent id="learning-popover" role="menu" tabIndex={-1}>
-    <Link href="/learning">
-      <a>All Tutorials, Courses & Learning Material</a>
-    </Link>
+    <Title size="0.8rem" margin="0 0 0.5rem">
+      Tutorials, Courses & Learning Material
+    </Title>
     <PopoverContentContainer>
       <PopoverContentSection>
         <Title size="0.8rem" margin="0 0 0.5rem">
@@ -289,9 +289,9 @@ const LearningPopover = () => (
 
 const ToolsPopover = () => (
   <PopoverContent id="tools-popover" role="menu" tabIndex={-1}>
-    <Link href="/tools">
-      <a>All Tools & Technologies</a>
-    </Link>
+    <Title size="0.8rem" margin="0 0 0.5rem">
+      Tools & Technologies
+    </Title>
     <PopoverContentContainer>
       <PopoverContentSection>
         <Title size="0.8rem" margin="0 0 0.5rem">

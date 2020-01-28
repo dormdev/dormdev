@@ -13,7 +13,7 @@ export default () => (
     <Global>
       <Header />
       <StyledMain>
-        <h1>All Learning</h1>
+        <h1>All Tools</h1>
         <Link href="/tools/workflow">
           <a>Workflow</a>
         </Link>

@@ -194,6 +194,21 @@ export default () => (
             </Link>
           </li>
           <li>
+            <Link href="/learning">
+              <a>Learning</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/tools">
+              <a>Tools</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/resources">
+              <a>Resources</a>
+            </Link>
+          </li>
+          <li>
             <a
               href="https://dorm.dev/medium"
               target="_blank"

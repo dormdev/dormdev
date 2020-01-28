@@ -16,7 +16,7 @@ export default () => (
         <Item logo="/assets/triplebyte.png">
           <h4>Triplebyte</h4>
           <p>
-            Triplebyte helps developersfind great companies to work at. Go
+            Triplebyte helps developers find great companies to work at. Go
             through a technical interview process get feedback on your strengths
             and weaknesses. Triplebyte will match you with companies that are
             looking for people with your specific skill sets, and then fast
