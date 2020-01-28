@@ -218,8 +218,8 @@ const LearningPopover = () => (
           </a>
         </Link>
         <Link href="/learning/backend">
-          <a>
-            Backend <LinkLabel bg="#3291ff">New</LinkLabel>
+          <a className="inactive">
+            Backend <LinkLabel>Soon</LinkLabel>
           </a>
         </Link>
         <Link href="/learning/mobile">

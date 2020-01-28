@@ -24,13 +24,23 @@ export default () => (
           <ul>
             <li>
               Student Price – Free through{' '}
-              <a href="https://every-layout.dev/honour-system/">
+              <a
+                href="https://every-layout.dev/honour-system/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 "Honour System licence".
               </a>
             </li>
             <li>
               Link –{' '}
-              <a href="https://every-layout.dev">https://every-layout.dev</a>
+              <a
+                href="https://every-layout.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://every-layout.dev
+              </a>
             </li>
           </ul>
         </Item>
