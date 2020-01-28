@@ -418,29 +418,25 @@ export default () => {
   }, [menu])
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const headerElement = document.getElementsByTagName('header')[0]
-      const headerPosition =
-        headerElement.offsetTop + headerElement.offsetHeight - 48
+    const headerElement = document.getElementsByTagName('header')[0]
+    const headerPosition =
+      headerElement.offsetTop + headerElement.offsetHeight - 48
 
-      window.onscroll = function() {
-        if (window.pageYOffset <= headerPosition) {
-          headerElement.style.borderBottom = '1px solid #fffefc'
-          headerElement.style.padding = '1rem'
-        } else {
-          headerElement.style.borderBottom = '1px solid var(--grey9)'
-          headerElement.style.padding = '0.3rem 1rem'
-        }
+    window.onscroll = function() {
+      if (window.pageYOffset <= headerPosition) {
+        headerElement.style.borderBottom = '1px solid #fffefc'
+        headerElement.style.padding = '1rem'
+      } else {
+        headerElement.style.borderBottom = '1px solid var(--grey9)'
+        headerElement.style.padding = '0.3rem 1rem'
       }
-
-      window.addEventListener('resize', handleResize)
     }
+
+    window.addEventListener('resize', handleResize)
     return () => {
-      if (typeof window !== 'undefined') {
-        window.onscroll = null
-        window.removeEventListener('resize', handleResize)
-        document.body.style.overflow = 'auto'
-      }
+      window.onscroll = null
+      window.removeEventListener('resize', handleResize)
+      document.body.style.overflow = 'auto'
     }
   }, [handleResize])
 
