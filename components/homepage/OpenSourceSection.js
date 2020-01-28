@@ -99,7 +99,7 @@ export default () => {
     script.src = 'https://buttons.github.io/buttons.js'
     script.async = true
     script.defer = true
-    document.head.appendChild(script)
+    document.body.appendChild(script)
 
     return () => {
       script.parentNode.removeChild(script)

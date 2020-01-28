@@ -11,7 +11,8 @@ const ChatLink = props => {
     const script = document.createElement('script')
     script.src = 'https://client.crisp.chat/l.js'
     script.async = true
-    document.head.appendChild(script)
+    script.defer = true
+    document.body.appendChild(script)
 
     return () => {
       script.parentNode.removeChild(script)

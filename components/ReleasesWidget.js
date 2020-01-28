@@ -13,7 +13,8 @@ export default () => {
       const promise = new Promise((resolve, reject) => {
         script.src = '//cdn.headwayapp.co/widget.js'
         script.async = true
-        document.head.appendChild(script)
+        script.defer = true
+        document.body.appendChild(script)
         script.onload = resolve
         script.onerror = reject
       })
