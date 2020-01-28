@@ -111,7 +111,14 @@ export default () => {
       <h2>Open Source</h2>
       <p>
         DormDev™ is free and open source, under the Apache 2.0 license.
-        Contributions are welcomed!
+        Contributions are welcomed!{' '}
+        <a
+          href="https://github.com/dormdev/dormdev/blob/master/CONTRIBUTING.md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn How
+        </a>
       </p>
       {starCount && (
         <StarCount>
