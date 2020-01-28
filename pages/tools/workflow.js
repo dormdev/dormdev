@@ -14,7 +14,7 @@ export default () => (
       <StyledMain>
         <h1>Tools: Workflow</h1>
         <Item logo="/assets/notion-logo.svg">
-          <h4>Figma</h4>
+          <h4>Notion</h4>
           <p>
             A new tool that blends your everyday work (notes, tasks, wikis) in
             one app. It's the all-in-one workspace for you and your team.
