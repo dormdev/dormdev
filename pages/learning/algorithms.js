@@ -24,12 +24,7 @@ export default () => (
             efficiently.
           </p>
           <ul>
-            <li>
-              Student Price – Free through
-              <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science">
-                edX
-              </a>
-            </li>
+            <li>Student Price – Free through edX</li>
             <li>
               Link –{' '}
               <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science">
