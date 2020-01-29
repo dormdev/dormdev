@@ -13,18 +13,28 @@ export default () => (
       <Header />
       <StyledMain>
         <h1>Learning Data Structures and Algorithms</h1>
-        <Item logo="/assets/leetcode.png">
-          <h4>LeetCode</h4>
+        <Item logo="/assets/cs50.png">
+          <h4>Harvard CS50: Introduction to Computer Science</h4>
           <p>
-            Level up your coding skills and quickly land a job. This is the best
-            place to expand your knowledge and get prepared for your next
-            interview.
+            CS50x is Harvard University's introduction to the intellectual
+            enterprises of computer science and the art of programming for
+            majors and non-majors alike, with or without prior programming
+            experience. An entry-level course taught by David J. Malan, CS50x
+            teaches students how to think algorithmically and solve problems
+            efficiently.
           </p>
           <ul>
-            <li>Student Price – $99/yr, currently unavailable</li>
+            <li>
+              Student Price – Free through
+              <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science">
+                edX
+              </a>
+            </li>
             <li>
               Link –{' '}
-              <a href="https://leetcode.com/students">leetcode.com/students</a>
+              <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science">
+                edx.org/course/cs50s-introduction-to-computer-science
+              </a>
             </li>
           </ul>
         </Item>

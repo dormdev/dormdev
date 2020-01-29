@@ -344,8 +344,8 @@ const ResourcesPopover = () => (
         </a>
       </Link>
       <Link href="/resources/interviews">
-        <a className="inactive">
-          Coding Interviews <LinkLabel>Soon</LinkLabel>
+        <a>
+          Coding Interviews <LinkLabel bg="#3291ff">New</LinkLabel>
         </a>
       </Link>
       <Link href="/resources/career">
