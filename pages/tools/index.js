@@ -18,7 +18,7 @@ export default () => (
           <a>Workflow</a>
         </Link>
         <Link href="/tools/prototyping">
-          <a>Data Structures & Algorithms</a>
+          <a>Prototyping</a>
         </Link>
         <Link href="/tools/cloud">
           <a>Cloud Services</a>
