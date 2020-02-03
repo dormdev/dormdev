@@ -77,8 +77,16 @@ const ButtonActions = styled.div`
   flex-wrap: wrap;
 
   * {
-    margin-left: 0.15rem;
-    margin-right: 0.15rem;
+    margin-left: 0.33rem;
+    margin-right: 0.33rem;
+  }
+
+  @media all and (max-width: 499px) {
+    margin-top: 1.5rem;
+
+    * {
+      margin-top: 0.33rem;
+    }
   }
 `
 
@@ -134,6 +142,7 @@ export default () => {
           data-icon="octicon-issue-opened"
           data-size="large"
           aria-label="Issue on GitHub"
+          data-show-count="true"
         >
           Issue
         </a>
@@ -143,6 +152,7 @@ export default () => {
           data-icon="octicon-eye"
           data-size="large"
           aria-label="Watch on GitHub"
+          data-show-count="true"
         >
           Watch
         </a>
@@ -152,6 +162,7 @@ export default () => {
           data-icon="star"
           data-size="large"
           aria-label="Star on GitHub"
+          data-show-count="true"
         >
           Star
         </a>
@@ -161,6 +172,7 @@ export default () => {
           data-icon="octicon-repo-forked"
           data-size="large"
           aria-label="Fork on GitHub"
+          data-show-count="true"
         >
           Fork
         </a>
