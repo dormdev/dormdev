@@ -148,8 +148,7 @@ const GreenCircle = styled.span`
   margin-left: 0.35rem;
   display: inline-block;
   background: #3ebd93;
-  height: 9.6px;
-  width: 9.6px;
+  padding: 5px;
   border-radius: 20px;
 `
 
@@ -232,13 +231,13 @@ export default () => (
             </a>
           </li>
           <li>
+            <ReleasesWidget />
+          </li>
+          <li>
             <a href="https://status.dormdev.com">
               Status
               <GreenCircle />
             </a>
-          </li>
-          <li>
-            <ReleasesWidget />
           </li>
         </ul>
       </Block>

@@ -6,7 +6,7 @@ require('dotenv').config()
 
 const env = {
   crispID: process.env.CRISP_ID,
-  headwayAccount: process.env.HEADWAY_ACCOUNT,
+  cannyID: process.env.CANNY_ID,
   typeformSurveyID: process.env.TYPEFORM_SURVEY_ID
 }
 

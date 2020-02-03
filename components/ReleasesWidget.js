@@ -1,17 +1,26 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 
-const StyledWidget = styled.a`
-  padding-right: 10px;
+const StyledWidget = styled.button`
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--grey3);
+  }
 `
 
 export default () => {
   useEffect(() => {
     const script = document.createElement('script')
 
-    async function loadHeadway() {
+    async function loadCanny() {
       const promise = new Promise((resolve, reject) => {
-        script.src = '//cdn.headwayapp.co/widget.js'
+        script.src = 'https://canny.io/sdk.js'
         script.async = true
         script.defer = true
         document.body.appendChild(script)
@@ -21,24 +30,19 @@ export default () => {
 
       await promise
 
-      const config = {
-        selector: '#releases-widget',
-        account: process.env.headwayAccount
-      }
-
-      window.Headway.init(config)
+      window.Canny('initChangelog', {
+        appID: process.env.cannyID,
+        position: 'top',
+        align: 'left'
+      })
     }
 
-    loadHeadway()
+    loadCanny()
 
     return () => {
       script.parentNode.removeChild(script)
     }
   }, [])
 
-  return (
-    <StyledWidget rel="noopener noreferrer">
-      <span id="releases-widget">Release Notes</span>
-    </StyledWidget>
-  )
+  return <StyledWidget data-canny-changelog>Release Notes</StyledWidget>
 }

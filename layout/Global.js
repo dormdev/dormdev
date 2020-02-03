@@ -263,21 +263,15 @@ const Layout = ({ children }) => (
         display: none !important;
       }
 
-      #releases-widget {
-        position: relative;
-      }
-
-      #HW_badge_cont {
-        width: 100% !important;
-        position: absolute !important;
-        top: 0;
-      }
-
-      #HW_badge {
-        background: #2bb0ed !important;
-        top: 1px !important;
-        right: -1.2rem !important;
-        left: auto !important;
+      .Canny_BadgeContainer .Canny_Badge {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -1rem;
+        border-radius: 20px;
+        background-color: #2bb0ed;
+        padding: 5px;
+        border: none;
       }
     `}</style>
   </StyledLayout>

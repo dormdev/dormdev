@@ -3,13 +3,12 @@
   "version": 2,
   "public": true,
   "github": {
-    "enabled": true,
     "autoAlias": true
   },
   "build": {
     "env": {
       "CRISP_ID": "@crisp_id",
-      "HEADWAY_ACCOUNT": "@headway_account",
+      "CANNY_ID": "@canny_id",
       "TYPEFORM_SURVEY_ID": "@typeform_survey_id"
     }
   }
