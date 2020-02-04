@@ -231,6 +231,9 @@ export default () => (
             </a>
           </li>
           <li>
+            <a href="https://dorm.dev/roadmap">Roadmap</a>
+          </li>
+          <li>
             <ReleasesWidget />
           </li>
           <li>
