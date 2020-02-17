@@ -203,9 +203,6 @@ export default () => (
             </Link>
           </li>
           <li>
-            <a href="https://dorm.dev/medium">Medium Blog</a>
-          </li>
-          <li>
             <a href="https://dorm.dev/youtube">YouTube Channel</a>
           </li>
         </ul>
