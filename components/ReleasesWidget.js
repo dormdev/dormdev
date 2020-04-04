@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 
 const StyledWidget = styled.button`
+  color: black;
   background: none;
   border: none;
   padding: 0;
