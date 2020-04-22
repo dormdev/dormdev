@@ -10,7 +10,7 @@ import ReleasesWidget from './ReleasesWidget'
 const StyledSmallFooter = styled.footer`
   margin-top: 3rem;
   margin-bottom: 3rem;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--grey3);
   text-align: center;
 
@@ -21,7 +21,7 @@ const StyledSmallFooter = styled.footer`
 
   a {
     margin-left: 0.25rem;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
     color: var(--grey3);
   }
 `
@@ -109,7 +109,7 @@ const Block = styled.div`
     align-items: center;
     color: black;
     box-shadow: none;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
 
     &:hover {
       color: var(--grey3);

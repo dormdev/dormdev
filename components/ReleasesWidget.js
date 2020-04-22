@@ -7,7 +7,7 @@ const StyledWidget = styled.button`
   border: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   cursor: pointer;
 
   &:hover {

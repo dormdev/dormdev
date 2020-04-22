@@ -12,7 +12,7 @@ const NewsletterSection = styled.section`
     margin-top: 1rem;
     color: var(--grey4);
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
 
     @media all and (min-width: 500px) {
       font-size: 1rem;

@@ -129,7 +129,7 @@ const Nav = styled.nav`
 
     a {
       margin: 0 1rem;
-      font-size: 0.9rem;
+      font-size: 0.9375rem;
       box-shadow: none;
     }
 
@@ -151,7 +151,7 @@ const PopoverContent = styled.div`
     align-items: center;
     color: black;
     box-shadow: none;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
 
     &:hover {
       color: var(--grey3);
@@ -175,7 +175,7 @@ const PopoverContentSection = styled.div`
     text-decoration: none;
     box-shadow: none;
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
 
     &:hover {
       color: var(--grey3);
