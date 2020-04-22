@@ -13,7 +13,7 @@ const LogoContainer = styled.div`
     font-size: 1.5rem;
     font-weight: 700;
     color: black;
-    text-decoration: none;
+    box-shadow: none;
 
     &:hover {
       color: black;
@@ -93,7 +93,7 @@ const List = styled.nav`
         line-height: 2.35;
         width: 100%;
         color: black;
-        text-decoration: none;
+        box-shadow: none;
 
         &:hover {
           color: var(--grey3);
@@ -130,7 +130,7 @@ const Nav = styled.nav`
     a {
       margin: 0 1rem;
       font-size: 0.9rem;
-      text-decoration: none;
+      box-shadow: none;
     }
 
     hr {
@@ -150,7 +150,7 @@ const PopoverContent = styled.div`
     display: flex;
     align-items: center;
     color: black;
-    text-decoration: none;
+    box-shadow: none;
     font-size: 0.9rem;
 
     &:hover {
@@ -173,6 +173,7 @@ const PopoverContentSection = styled.div`
   a {
     color: black;
     text-decoration: none;
+    box-shadow: none;
     margin-top: 0.5rem;
     font-size: 0.9rem;
 

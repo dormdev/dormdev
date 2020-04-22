@@ -23,7 +23,6 @@ const StyledSmallFooter = styled.footer`
     margin-left: 0.25rem;
     font-size: 0.9rem;
     color: var(--grey3);
-    text-decoration: underline;
   }
 `
 
@@ -109,7 +108,7 @@ const Block = styled.div`
     display: flex;
     align-items: center;
     color: black;
-    text-decoration: none;
+    box-shadow: none;
     font-size: 0.9rem;
 
     &:hover {
@@ -136,7 +135,8 @@ const LogoBlock = styled(Block)`
   }
 
   a.terms-privacy {
-    text-decoration: underline;
+    display: inline-block;
+    box-shadow: 0 1px 0 0 currentColor;
 
     &:hover {
       color: black;

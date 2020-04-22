@@ -36,7 +36,7 @@ const StarCount = styled.div`
     }
 
     font-weight: bold;
-    text-decoration-style: double;
+    box-shadow: none;
   }
 `
 

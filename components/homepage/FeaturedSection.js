@@ -14,7 +14,7 @@ const FeaturedSection = styled.section`
   }
 
   a {
-    text-decoration: none;
+    box-shadow: none;
   }
 `
 
