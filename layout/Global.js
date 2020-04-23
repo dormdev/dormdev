@@ -4,8 +4,9 @@ import styled from 'styled-components'
 import 'focus-visible'
 
 const StyledLayout = styled.div`
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   min-height: 100vh;
   padding-bottom: 2rem;
   background-color: #fffefc;
