@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: rlespinasse/github-slug-action@master
+      - uses: rlespinasse/github-slug-action@v1.1.x
       - name: Run Lighthouse and test budgets
         uses: treosh/lighthouse-ci-action@v2
         with:
