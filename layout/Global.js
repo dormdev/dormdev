@@ -190,6 +190,11 @@ const Layout = ({ children }) => (
         margin: 0;
       }
 
+      html,
+      body {
+        min-width: 360px;
+      }
+
       body {
         min-height: 100vh;
         scroll-behavior: smooth;

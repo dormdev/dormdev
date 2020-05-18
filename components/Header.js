@@ -44,7 +44,8 @@ export const Logo = () => (
 )
 
 const StyledHeader = styled.header`
-  background-color: #fffefc;
+  background-color: rgba(255, 254, 252, 0.8);
+  backdrop-filter: saturate(180%) blur(10px);
   position: fixed;
   top: 0;
   display: flex;
