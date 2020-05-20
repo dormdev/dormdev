@@ -417,10 +417,10 @@ export default () => {
     }
 
     window.addEventListener('resize', handleResize)
+
     return () => {
       window.onscroll = null
       window.removeEventListener('resize', handleResize)
-      document.body.style.overflow = 'auto'
     }
   }, [handleResize])
 
