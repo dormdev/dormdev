@@ -44,8 +44,7 @@ export const Logo = () => (
 )
 
 const StyledHeader = styled.header`
-  background-color: rgba(255, 254, 252, 0.8);
-  backdrop-filter: saturate(180%) blur(10px);
+  background-color: rgb(255, 254, 252);
   position: fixed;
   top: 0;
   display: flex;
@@ -55,6 +54,11 @@ const StyledHeader = styled.header`
   padding: 1rem;
   border-bottom: 1px solid #fffefc;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  @supports (backdrop-filter: saturate(180%) blur(20px)) {
+    background-color: rgba(255, 254, 252, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
 `
 
 const ContextualMenu = styled.div`
