@@ -39,8 +39,20 @@ export default class MyDocument extends Document {
             initialScale="1"
           />
           <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com/"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+            as="style"
+          />
+          <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
             rel="stylesheet"
+            media="print"
+            onLoad="this.media='all'"
           />
         </Head>
         <body>
