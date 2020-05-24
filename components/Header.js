@@ -381,6 +381,17 @@ const CommunityPopover = () => (
   </PopoverContent>
 )
 
+const nextApp =
+  typeof window !== 'undefined' && document.getElementById('__next')
+
+const disableScroll = () => {
+  nextApp.style.overflow = 'hidden'
+}
+
+const enableScroll = () => {
+  nextApp.style.overflow = 'auto'
+}
+
 export default () => {
   const [menu, setMenu] = useState(false)
   const [learningPopover, setLearningPopover] = useState(false)
@@ -399,11 +410,10 @@ export default () => {
 
   const handleResize = useCallback(() => {
     const windowSize = window.innerWidth
-    if (menu === true && windowSize >= 885) {
-      setMenu(false)
-      document.body.style.overflow = 'auto'
+    if (windowSize >= 885) {
+      enableScroll()
     }
-  }, [menu])
+  }, [])
 
   useEffect(() => {
     const headerElement = document.getElementsByTagName('header')[0]
@@ -423,6 +433,7 @@ export default () => {
     window.addEventListener('resize', handleResize)
 
     return () => {
+      enableScroll()
       window.onscroll = null
       window.removeEventListener('resize', handleResize)
     }
@@ -437,10 +448,17 @@ export default () => {
             <ListHeader>
               <Logo />
               <X
+                tabindex="0"
                 size={36}
+                onKeyPress={event => {
+                  if (event.key === 'Enter') {
+                    enableScroll()
+                    setMenu(false)
+                  }
+                }}
                 onClick={() => {
+                  enableScroll()
                   setMenu(false)
-                  document.body.style.overflow = 'auto'
                 }}
               />
             </ListHeader>
@@ -513,11 +531,18 @@ export default () => {
           </List>
         ) : (
           <Menu
+            tabindex="0"
             style={{ marginTop: '0.3rem' }}
             size={36}
+            onKeyPress={event => {
+              if (event.key === 'Enter') {
+                disableScroll()
+                setMenu(true)
+              }
+            }}
             onClick={() => {
+              disableScroll()
               setMenu(true)
-              document.body.style.overflow = 'hidden'
             }}
           />
         )}
