@@ -26,6 +26,20 @@ const Meditating = styled.img`
   animation: ${meditation} 2s alternate infinite ease-in-out;
 `
 
+export async function getServerSideProps({ res, err }) {
+  let statusCode
+
+  if (res) {
+    statusCode = res.statusCode
+  } else if (err) {
+    statusCode = err.statusCode
+  } else {
+    statusCode = 404
+  }
+
+  return { statusCode }
+}
+
 const Error = ({ statusCode }) => (
   <>
     <DocumentHead />
@@ -43,20 +57,6 @@ const Error = ({ statusCode }) => (
 
 Error.propTypes = {
   statusCode: PropTypes.number
-}
-
-Error.getServerSideProps = ({ res, err }) => {
-  let statusCode
-
-  if (res) {
-    statusCode = res.statusCode
-  } else if (err) {
-    statusCode = err.statusCode
-  } else {
-    statusCode = 404
-  }
-
-  return { statusCode }
 }
 
 export default Error
