@@ -1,11 +1,11 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
-import DocumentHead from '~/components/Head'
-import Global from '~/layout/Global'
-import Header from '~/components/Header'
-import { SmallFooter } from '~/components/Footer'
-import { StyledHero } from '~/components/homepage/HeroSection'
+import DocumentHead from 'components/Head'
+import Global from 'layout/Global'
+import Header from 'components/Header'
+import { SmallFooter } from 'components/Footer'
+import { StyledHero } from 'components/homepage/HeroSection'
 
 const meditation = keyframes`
   from {
