@@ -381,14 +381,17 @@ const CommunityPopover = () => (
   </PopoverContent>
 )
 
+const body = typeof window !== 'undefined' && document.body
 const nextApp =
   typeof window !== 'undefined' && document.getElementById('__next')
 
 const disableScroll = () => {
+  body.style.overflow = 'hidden'
   nextApp.style.overflow = 'hidden'
 }
 
 const enableScroll = () => {
+  body.style.overflow = 'auto'
   nextApp.style.overflow = 'auto'
 }
 
@@ -448,7 +451,7 @@ export default () => {
             <ListHeader>
               <Logo />
               <X
-                tabindex="0"
+                tabIndex="0"
                 size={36}
                 onKeyPress={event => {
                   if (event.key === 'Enter') {
@@ -531,7 +534,7 @@ export default () => {
           </List>
         ) : (
           <Menu
-            tabindex="0"
+            tabIndex="0"
             style={{ marginTop: '0.3rem' }}
             size={36}
             onKeyPress={event => {
