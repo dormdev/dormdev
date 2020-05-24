@@ -1,12 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 
-import DocumentHead from 'components/Head'
-import Global from 'layout/Global'
-import Header from 'components/Header'
-import { SmallFooter } from 'components/Footer'
-import { StyledHero } from 'components/homepage/HeroSection'
+import DocumentHead from '~/components/Head'
+import Global from '~/layout/Global'
+import Header from '~/components/Header'
+import { SmallFooter } from '~/components/Footer'
+import { StyledHero } from '~/components/homepage/HeroSection'
 
 const meditation = keyframes`
   from {
@@ -26,37 +25,19 @@ const Meditating = styled.img`
   animation: ${meditation} 2s alternate infinite ease-in-out;
 `
 
-const Error = ({ statusCode }) => (
+const Error = () => (
   <>
     <DocumentHead />
     <Global>
       <Header />
       <StyledHero>
         <Meditating src="/assets/meditating.svg" alt="" />
-        <h1>{statusCode || 'Client Error'}!</h1>
+        <h1>404!</h1>
         <p>Oops! Nothing to see here.</p>
       </StyledHero>
       <SmallFooter />
     </Global>
   </>
 )
-
-export async function getServerSideProps({ res, err }) {
-  let statusCode
-
-  if (res) {
-    statusCode = res.statusCode
-  } else if (err) {
-    statusCode = err.statusCode
-  } else {
-    statusCode = 404
-  }
-
-  return { statusCode }
-}
-
-Error.propTypes = {
-  statusCode: PropTypes.number
-}
 
 export default Error
