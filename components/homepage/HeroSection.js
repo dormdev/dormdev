@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import ProgressiveImage from 'react-progressive-image'
 
-import { checkWebP } from '~/utilities/checkWebP'
+import { checkWebP } from 'utilities/checkWebP'
 
 const webSupported = checkWebP()
 

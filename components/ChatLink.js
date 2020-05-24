@@ -6,7 +6,7 @@ const ChatLink = props => {
 
   useEffect(() => {
     window.$crisp = []
-    window.CRISP_WEBSITE_ID = process.env.crispID
+    window.CRISP_WEBSITE_ID = process.env.CRISP_ID
 
     const script = document.createElement('script')
     script.src = 'https://client.crisp.chat/l.js'

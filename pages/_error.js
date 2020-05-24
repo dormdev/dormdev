@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import styled, { keyframes } from 'styled-components'
 
-import DocumentHead from '~/components/Head'
-import Global from '~/layout/Global'
-import Header from '~/components/Header'
-import { SmallFooter } from '~/components/Footer'
-import Button from '~/components/Button'
-import { StyledHero } from '~/components/homepage/HeroSection'
+import DocumentHead from 'components/Head'
+import Global from 'layout/Global'
+import Header from 'components/Header'
+import { SmallFooter } from 'components/Footer'
+import Button from 'components/Button'
+import { StyledHero } from 'components/homepage/HeroSection'
 
 const meditation = keyframes`
   from {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Star } from 'react-feather'
 
-import { countRepoStars } from '~/utilities/countRepoStars'
+import { countRepoStars } from 'utilities/countRepoStars'
 
 const OpenSourceSection = styled.section`
   margin: 2rem 0;

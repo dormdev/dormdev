@@ -1,5 +1,3 @@
-import fetch from 'isomorphic-unfetch'
-
 export const countRepoStars = async (user, userRepo) => {
   let starCount
   const url = `https://api.github.com/repos/${user}/${userRepo}`

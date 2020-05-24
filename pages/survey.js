@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import DocumentHead from '~/components/Head'
-import Global from '~/layout/Global'
+import DocumentHead from 'components/Head'
+import Global from 'layout/Global'
 
 const StyledIframe = styled.iframe`
   width: 100vw !important;
@@ -17,7 +17,7 @@ export default () => (
         title="survey"
         id="typeform-full"
         frameBorder="0"
-        src={`https://dormdev.typeform.com/to/${process.env.typeformSurveyID}`}
+        src={`https://dormdev.typeform.com/to/${process.env.TYPEFORM_SURVEY_ID}`}
       />
     </Global>
   </>

@@ -32,7 +32,7 @@ export default () => {
       await promise
 
       window.Canny('initChangelog', {
-        appID: process.env.cannyID,
+        appID: process.env.CANNY_ID,
         position: 'top',
         align: 'left'
       })

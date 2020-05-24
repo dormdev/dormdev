@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 
-import { checkDarkMode } from '~/utilities/checkDarkMode'
+import { checkDarkMode } from 'utilities/checkDarkMode'
 
 const DarkOverlay = styled.div`
   position: fixed;

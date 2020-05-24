@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# vercel
+.vercel
+
 # next.js
 /.next/
 /out/
@@ -17,7 +20,7 @@
 
 # misc
 .DS_Store
-.env*
+.env*.local
 
 # debug
 npm-debug.log*

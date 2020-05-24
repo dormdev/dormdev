@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "."
+    // "paths": {
+    //   "@/design-system/*": ["components/design-system/*"]
+    // }
+  }
+}
