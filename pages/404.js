@@ -6,6 +6,7 @@ import Global from 'layout/Global'
 import Header from 'components/Header'
 import { SmallFooter } from 'components/Footer'
 import { StyledHero } from 'components/homepage/HeroSection'
+import DarkSlider from 'components/DarkSlider'
 
 const meditation = keyframes`
   from {
@@ -34,6 +35,7 @@ const Error = () => (
         <Meditating src="/assets/meditating.svg" alt="" />
         <h1>404!</h1>
         <p>Oops! Nothing to see here.</p>
+        <DarkSlider />
       </StyledHero>
       <SmallFooter />
     </Global>

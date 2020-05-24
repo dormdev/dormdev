@@ -8,7 +8,7 @@ import ChatLink from './ChatLink'
 import ReleasesWidget from './ReleasesWidget'
 
 const StyledSmallFooter = styled.footer`
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
   font-size: 0.9375rem;
   color: var(--grey3);

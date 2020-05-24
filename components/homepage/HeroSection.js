@@ -34,6 +34,10 @@ export const StyledHero = styled.section`
     padding: 0 1rem;
     max-width: 42rem;
   }
+
+  button {
+    margin: 3rem auto 0;
+  }
 `
 
 const rotateGirl = keyframes`
