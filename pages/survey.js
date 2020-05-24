@@ -17,7 +17,7 @@ export default () => (
         title="survey"
         id="typeform-full"
         frameBorder="0"
-        src={`https://dormdev.typeform.com/to/${process.env.TYPEFORM_SURVEY_ID}`}
+        src={`https://dormdev.typeform.com/to/${process.env.NEXT_PUBLIC_TYPEFORM_SURVEY_ID}`}
       />
     </Global>
   </>
