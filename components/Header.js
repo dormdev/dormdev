@@ -466,7 +466,7 @@ export default () => {
               />
             </ListHeader>
             <ul>
-              {/* <li>
+              <li>
                 <Link href="/login">
                   <a tabIndex={-1}>
                     <Button
@@ -487,15 +487,6 @@ export default () => {
                   <a tabIndex={-1}>
                     <Button width="100%" fontWeight="600" centered>
                       Join
-                    </Button>
-                  </a>
-                </Link>
-              </li> */}
-              <li>
-                <Link href="/survey">
-                  <a tabIndex={-1}>
-                    <Button width="100%" fontWeight="600" centered>
-                      Survey
                     </Button>
                   </a>
                 </Link>
@@ -652,17 +643,12 @@ export default () => {
           </a>
         </Popover>
         <hr />
-        {/* <Link href="/login">
+        <Link href="/login">
           <a>Login</a>
         </Link>
         <Link href="/join">
           <a tabIndex={-1}>
             <Button fontWeight="600">Join</Button>
-          </a>
-        </Link> */}
-        <Link href="/survey">
-          <a tabIndex={-1}>
-            <Button fontWeight="600">Survey</Button>
           </a>
         </Link>
       </Nav>

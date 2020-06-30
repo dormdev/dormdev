@@ -172,7 +172,7 @@ export default () => (
       <Block>
         <h6>Links</h6>
         <ul>
-          {/* <li>
+          <li>
             <Link href="/login">
               <a>Login</a>
             </Link>
@@ -180,11 +180,6 @@ export default () => (
           <li>
             <Link href="/join">
               <a>Sign Up</a>
-            </Link>
-          </li> */}
-          <li>
-            <Link href="/survey">
-              <a>Survey</a>
             </Link>
           </li>
           <li>
