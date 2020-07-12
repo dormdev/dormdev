@@ -7,7 +7,8 @@ export function checkDarkMode() {
     } else if (window.localStorage.getItem('darkMode') === 'true') {
       darkMode = true
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      darkMode = true
+      // remove for now -> add back in after better dark mode implementation
+      // darkMode = true
     } else {
       darkMode = false
     }
