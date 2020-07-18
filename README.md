@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a aria-label="Deployed on Vercel/Zeit" href="https://vercel.com/docs/v2/git-integrations/vercel-for-github">
+  <a aria-label="Deployed on Vercel/Zeit" href="https://vercel.com/w-8/dormdev">
     <img src="https://img.shields.io/badge/deployed-success.svg?style=flat-square&logo=Vercel&labelColor=000000&logoWidth=20">
   </a>
   <a aria-label="CircleCI" href="https://circleci.com/gh/W8/dormdev/tree/master">
