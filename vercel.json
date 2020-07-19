@@ -1,7 +1,7 @@
 {
   "version": 2,
   "alias": ["dormdev.com"],
-  "scope": "dorm-dev",
+  "scope": "w-8",
   "public": true,
   "cleanUrls": true,
   "trailingSlash": false,
