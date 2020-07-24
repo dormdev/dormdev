@@ -24,10 +24,10 @@
     <img src="https://img.shields.io/badge/node-12.x-blue?style=flat-square">
   </a>
   <a aria-label="DormDev Version" href="./package.json#L3">
-    <img src="https://img.shields.io/github/package-json/v/W8/dormdev?style=flat-square">
+    <img src="https://img.shields.io/github/package-json/v/W8/dormdev?color=black?style=flat-square">
   </a>
   <a aria-label="DormDev contributors" href="https://github.com/W8/dormdev/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/W8/dormdev?color=blue&style=flat-square">
+    <img src="https://img.shields.io/github/contributors/W8/dormdev?color=black&style=flat-square">
   </a>
 </p>
 
