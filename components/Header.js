@@ -395,7 +395,7 @@ const enableScroll = () => {
   nextApp.style.overflow = 'auto'
 }
 
-export default () => {
+const Header = () => {
   const [menu, setMenu] = useState(false)
   const [learningPopover, setLearningPopover] = useState(false)
   const [toolsPopover, setToolsPopover] = useState(false)
@@ -669,3 +669,5 @@ export default () => {
     </StyledHeader>
   )
 }
+
+export default Header

@@ -4,7 +4,7 @@ import { Star } from 'react-feather'
 
 import { countRepoStars } from 'utilities/countRepoStars'
 
-const OpenSourceSection = styled.section`
+const StyledSection = styled.section`
   margin: 2rem 0;
   text-align: center;
 
@@ -90,7 +90,7 @@ const ButtonActions = styled.div`
   }
 `
 
-export default () => {
+const OpenSourceSection = () => {
   const [starCount, setCount] = useState(null)
 
   useEffect(() => {
@@ -115,7 +115,7 @@ export default () => {
   }, [])
 
   return (
-    <OpenSourceSection aria-label="open-source">
+    <StyledSection aria-label="open-source">
       <h2>Open Source</h2>
       <p>
         DormDev™ is free and open source, under the Apache 2.0 license.
@@ -177,6 +177,8 @@ export default () => {
           Fork
         </a>
       </ButtonActions>
-    </OpenSourceSection>
+    </StyledSection>
   )
 }
+
+export default OpenSourceSection

@@ -9,7 +9,7 @@ import NewsletterSection from 'components/homepage/NewsletterSection'
 import FeaturedSection from 'components/homepage/FeaturedSection'
 import OpenSourceSection from 'components/homepage/OpenSourceSection'
 
-export default () => (
+const Index = () => (
   <>
     <DocumentHead />
     <Global>
@@ -22,3 +22,5 @@ export default () => (
     </Global>
   </>
 )
+
+export default Index

@@ -152,7 +152,7 @@ const GreenCircle = styled.span`
   border-radius: 20px;
 `
 
-export default () => (
+const Footer = () => (
   <StyledFooter>
     <LogoBlock>
       <Logo />
@@ -284,3 +284,5 @@ export default () => (
     </FooterNavigation>
   </StyledFooter>
 )
+
+export default Footer

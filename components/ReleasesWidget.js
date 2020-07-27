@@ -15,7 +15,7 @@ const StyledWidget = styled.button`
   }
 `
 
-export default () => {
+const ReleasesWidget = () => {
   useEffect(() => {
     const script = document.createElement('script')
 
@@ -47,3 +47,5 @@ export default () => {
 
   return <StyledWidget data-canny-changelog>Release Notes</StyledWidget>
 }
+
+export default ReleasesWidget

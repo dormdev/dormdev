@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Subscribe from '../Subscribe'
 
-const NewsletterSection = styled.section`
+const StyledSection = styled.section`
   margin: 2rem 0 5rem;
   text-align: center;
   margin: 1rem 0;
@@ -20,9 +20,11 @@ const NewsletterSection = styled.section`
   }
 `
 
-export default () => (
-  <NewsletterSection aria-label="subscribe">
+const NewsletterSection = () => (
+  <StyledSection aria-label="subscribe">
     <Subscribe />
     <p>No spam, ever. Unsubscribe at any time.</p>
-  </NewsletterSection>
+  </StyledSection>
 )
+
+export default NewsletterSection

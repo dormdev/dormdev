@@ -78,7 +78,7 @@ const Boy = styled.img`
   animation: ${rotateBoy} 2.5s 1s alternate infinite ease-in-out;
 `
 
-export default () => (
+const HeroSection = () => (
   <StyledHero aria-label="hero">
     <div style={{ position: 'relative' }}>
       <Girl src="/assets/girl.svg" alt="" />
@@ -99,3 +99,5 @@ export default () => (
     </p>
   </StyledHero>
 )
+
+export default HeroSection

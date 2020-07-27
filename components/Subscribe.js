@@ -43,7 +43,7 @@ const FormElements = styled.div`
   }
 `
 
-export default () => {
+const Subscribe = () => {
   const formRef = useRef(null)
   const emailRef = useRef(null)
 
@@ -83,3 +83,5 @@ export default () => {
     </StyledForm>
   )
 }
+
+export default Subscribe

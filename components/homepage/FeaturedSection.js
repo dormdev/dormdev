@@ -5,7 +5,7 @@ import { ChevronRight, ChevronLeft } from 'react-feather'
 
 import Card from '../Card'
 
-const FeaturedSection = styled.section`
+const StyledSection = styled.section`
   text-align: center;
   margin: 5rem 0;
 
@@ -46,7 +46,7 @@ const CardImage = styled.img`
   margin: ${props => props.margin || '2rem auto'};
 `
 
-export default () => {
+const FeaturedSection = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0)
   const [numberOfCards, setCards] = useState(3)
 
@@ -87,7 +87,7 @@ export default () => {
   }, [handleResize])
 
   return (
-    <FeaturedSection aria-label="featured">
+    <StyledSection aria-label="featured">
       <h2>Recently Featured</h2>
       <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
@@ -161,6 +161,8 @@ export default () => {
           </Card>
         </a>
       </ItemsCarousel>
-    </FeaturedSection>
+    </StyledSection>
   )
 }
+
+export default FeaturedSection

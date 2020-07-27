@@ -69,7 +69,7 @@ const StyledSlider = styled.button`
   }
 `
 
-export default () => {
+const DarkSlider = () => {
   const [dark, toggleDark] = useState(false)
 
   useEffect(() => {
@@ -103,3 +103,5 @@ export default () => {
     </>
   )
 }
+
+export default DarkSlider
