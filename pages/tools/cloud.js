@@ -6,7 +6,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Item, { StyledMain } from 'components/Item'
 
-const Cloud () => (
+const Cloud = () => (
   <>
     <DocumentHead />
     <Global>
