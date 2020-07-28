@@ -7,7 +7,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import { StyledMain } from 'components/Item'
 
-export default () => (
+const LearningIndex = () => (
   <>
     <DocumentHead />
     <Global>
@@ -28,3 +28,5 @@ export default () => (
     </Global>
   </>
 )
+
+export default LearningIndex

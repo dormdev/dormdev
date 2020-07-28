@@ -6,7 +6,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Item, { StyledMain } from 'components/Item'
 
-export default () => (
+const Design = () => (
   <>
     <DocumentHead />
     <Global>
@@ -65,3 +65,5 @@ export default () => (
     </Global>
   </>
 )
+
+export default Design

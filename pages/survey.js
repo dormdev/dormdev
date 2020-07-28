@@ -9,7 +9,7 @@ const StyledIframe = styled.iframe`
   height: 100vh !important;
 `
 
-export default () => (
+const Survey = () => (
   <>
     <DocumentHead />
     <Global>
@@ -22,3 +22,5 @@ export default () => (
     </Global>
   </>
 )
+
+export default Survey

@@ -3,7 +3,7 @@ import ProgressiveImage from 'react-progressive-image'
 
 import { StyledHero } from './homepage/HeroSection'
 
-export default () => (
+const UnderConstruction = () => (
   <StyledHero>
     <ProgressiveImage
       src="/assets/construction.png"
@@ -14,3 +14,5 @@ export default () => (
     <h1>Under Construction!</h1>
   </StyledHero>
 )
+
+export default UnderConstruction

@@ -86,7 +86,7 @@ const List = styled.nav`
     list-style: none;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 
     li {
       margin-top: 1rem;

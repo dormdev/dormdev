@@ -6,7 +6,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Item, { StyledMain } from 'components/Item'
 
-export default () => (
+const Workflow = () => (
   <>
     <DocumentHead />
     <Global>
@@ -34,3 +34,5 @@ export default () => (
     </Global>
   </>
 )
+
+export default Workflow

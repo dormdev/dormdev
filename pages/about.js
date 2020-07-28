@@ -6,7 +6,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import UnderConstruction from 'components/UnderConstruction'
 
-export default () => (
+const About = () => (
   <>
     <DocumentHead />
     <Global>
@@ -16,3 +16,5 @@ export default () => (
     </Global>
   </>
 )
+
+export default About
