@@ -211,8 +211,8 @@ const Footer = () => (
         <h6>Platform & Services</h6>
         <ul>
           <li>
-            <Link href="/platform">
-              <a>Overview</a>
+            <Link href="/about">
+              <a>About</a>
             </Link>
           </li>
           <li>
@@ -239,26 +239,6 @@ const Footer = () => (
               <GreenCircle />
             </a>
           </li>
-        </ul>
-      </Block>
-      <Block>
-        <h6>Company</h6>
-        <ul>
-          <li>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/mission">
-              <a>Mission</a>
-            </Link>
-          </li>
-          {/* <li>
-            <Link href="/team">
-              <a>Team</a>
-            </Link>
-          </li> */}
         </ul>
       </Block>
       <Block marginRight="0">

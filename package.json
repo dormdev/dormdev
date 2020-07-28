@@ -28,6 +28,9 @@
     "react-tiny-popover": "^5.1.0",
     "styled-components": "^5.1.1"
   },
+  "resolutions": {
+    "react-items-carousel/styled-components": "^5.1.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@dormdev/eslint-config": "^0.1.3",
