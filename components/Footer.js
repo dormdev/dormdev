@@ -223,9 +223,7 @@ const Footer = () => (
             </Link>
           </li>
           <li>
-            <a className="inactive" href="https://dorm.dev/verification">
-              Student Verification <LinkLabel>Soon</LinkLabel>
-            </a>
+            <a href="https://dorm.dev/studentstatus">Student Verification</a>
           </li>
           <li>
             <a href="https://dorm.dev/roadmap">Roadmap</a>
