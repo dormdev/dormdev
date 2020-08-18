@@ -70,7 +70,7 @@ const HeroSection = () => (
         typeSpeed={60}
         backSpeed={80}
         startDelay={200}
-        backDelay={5000}
+        backDelay={3000}
         loop
       />
     </h1>
