@@ -88,7 +88,7 @@ const FeaturedSection = () => {
 
   return (
     <StyledSection aria-label="featured">
-      <h2>Recently Featured</h2>
+      <h2>Featured Stuff</h2>
       <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}

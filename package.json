@@ -26,6 +26,7 @@
     "react-items-carousel": "^2.8.0",
     "react-progressive-image": "^0.6.0",
     "react-tiny-popover": "^5.1.0",
+    "react-typed": "^1.2.0",
     "styled-components": "^5.1.1"
   },
   "resolutions": {

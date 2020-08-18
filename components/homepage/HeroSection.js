@@ -1,13 +1,15 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import ProgressiveImage from 'react-progressive-image'
+import Typed from 'react-typed'
 
 import { checkWebP } from 'utilities/checkWebP'
 
 const webSupported = checkWebP()
 
 export const StyledHero = styled.section`
-  margin-top: 7rem;
+  position: relative;
+  margin-top: 5rem;
   margin-bottom: 2rem;
   text-align: center;
   display: flex;
@@ -15,6 +17,7 @@ export const StyledHero = styled.section`
   align-items: center;
 
   h1 {
+    position: relative;
     font-size: 2rem;
     font-weight: 900;
     margin: 3rem auto 2rem;
@@ -30,6 +33,7 @@ export const StyledHero = styled.section`
   }
 
   p {
+    position: relative;
     margin: 0 auto;
     padding: 0 1rem;
     max-width: 42rem;
@@ -40,49 +44,16 @@ export const StyledHero = styled.section`
   }
 `
 
-const rotateGirl = keyframes`
-  from {
-    transform: rotate(-20deg);
-  }
-
-  to {
-    transform: rotate(-16deg) translateY(-5px);
-  }
-`
-
-const rotateBoy = keyframes`
-  from {
-    transform: rotate(-10deg);
-  }
-
-  to {
-    transform: rotate(-6deg) translateY(5px);
-  }
-`
-
-const Girl = styled.img`
+const Illustration = styled.div`
   position: absolute;
-  width: 20%;
-  top: 25%;
-  right: 28%;
-  transform: rotate(-20deg);
-  animation: ${rotateGirl} 2.5s 1s alternate infinite ease-in-out;
-`
-
-const Boy = styled.img`
-  position: absolute;
-  width: 18%;
-  top: 35%;
-  left: 28%;
-  transform: rotate(-10deg);
-  animation: ${rotateBoy} 2.5s 1s alternate infinite ease-in-out;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
 `
 
 const HeroSection = () => (
   <StyledHero aria-label="hero">
-    <div style={{ position: 'relative' }}>
-      <Girl src="/assets/girl.svg" alt="" />
-      <Boy src="/assets/boy.svg" alt="" />
+    <Illustration>
       <ProgressiveImage
         src={
           webSupported ? '/assets/background.webp' : '/assets/background.png'
@@ -91,8 +62,18 @@ const HeroSection = () => (
       >
         {src => <img src={src} alt="" />}
       </ProgressiveImage>
-    </div>
-    <h1>Home of student developers.</h1>
+    </Illustration>
+    <h1>
+      Home of student <br />{' '}
+      <Typed
+        strings={['developers.', 'designers.', 'doers.']}
+        typeSpeed={60}
+        backSpeed={80}
+        startDelay={200}
+        backDelay={5000}
+        loop
+      />
+    </h1>
     <p>
       Showcasing the best learning, tools and resources – handpicked for quality
       with exclusive offers and discounts for students.

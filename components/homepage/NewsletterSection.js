@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import Subscribe from '../Subscribe'
 
 const StyledSection = styled.section`
-  margin: 2rem 0 5rem;
+  position: relative;
+  margin: 2rem 0;
   text-align: center;
   margin: 1rem 0;
 
