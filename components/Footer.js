@@ -226,7 +226,7 @@ const Footer = () => (
             <a href="https://dorm.dev/studentstatus">Student Verification</a>
           </li>
           <li>
-            <a href="https://dorm.dev/roadmap">Roadmap</a>
+            <a href="https://dorm.dev/feedback">Feedback</a>
           </li>
           <li>
             <ReleasesWidget />
