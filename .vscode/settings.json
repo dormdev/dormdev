@@ -1,5 +1,5 @@
 // Workspace Settings for VSCode
-// Extends Wes Bos' configs → https://github.com/wesbos/eslint-config-wesbos#with-vs-code
+// Extends configs → https://github.com/dormdev/eslint-config#with-vs-code
 
 {
   "editor.formatOnSave": true,

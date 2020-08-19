@@ -13,6 +13,25 @@
     "build": "next build",
     "start": "next start"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{html,js,json,md,mdx,mjs,yml}": [
+      "prettier --write"
+    ],
+    "*.gif": [
+      "imageoptim"
+    ],
+    "*.jpg": [
+      "imageoptim"
+    ],
+    "*.png": [
+      "imageoptim --no-imageoptim --imagealpha"
+    ]
+  },
   "dependencies": {
     "@zeit/next-source-maps": "^0.0.3",
     "focus-visible": "^5.0.2",
@@ -39,8 +58,10 @@
     "babel-plugin-styled-components": "^1.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "husky": "^3.1.0",
+    "husky": "^4.2.5",
+    "imageoptim-cli": "^3.0.2",
     "jest": "^24.9.0",
+    "lint-staged": "^10.2.11",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.12.0"
   }
