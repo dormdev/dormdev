@@ -1,11 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import Link from 'next/link'
+import React from "react";
+import styled from "styled-components";
+import Link from "next/link";
 
-import { Logo, LinkLabel } from './Header'
-import DarkSlider from './DarkSlider'
-import ChatLink from './ChatLink'
-import ReleasesWidget from './ReleasesWidget'
+import { Logo, LinkLabel } from "./Header";
+import DarkSlider from "./DarkSlider";
+import ChatLink from "./ChatLink";
+import ReleasesWidget from "./ReleasesWidget";
 
 const StyledSmallFooter = styled.footer`
   margin-top: 1rem;
@@ -24,12 +24,12 @@ const StyledSmallFooter = styled.footer`
     font-size: 0.9375rem;
     color: var(--grey3);
   }
-`
+`;
 
 const SmallLogo = styled.img`
   margin: 0 auto 2rem;
   width: 3rem;
-`
+`;
 
 export const SmallFooter = () => (
   <StyledSmallFooter>
@@ -42,7 +42,7 @@ export const SmallFooter = () => (
     Having Trouble?
     <ChatLink>Send us a message</ChatLink>
   </StyledSmallFooter>
-)
+);
 
 const StyledFooter = styled.footer`
   margin-top: 4rem;
@@ -56,7 +56,7 @@ const StyledFooter = styled.footer`
     flex-direction: row;
     justify-content: flex-start;
   }
-`
+`;
 
 const FooterNavigation = styled.nav`
   display: flex;
@@ -69,11 +69,11 @@ const FooterNavigation = styled.nav`
     justify-content: space-evenly;
     margin-bottom: 0;
   }
-`
+`;
 
 const Block = styled.div`
   max-width: 15rem;
-  margin-right: ${props => props.marginRight || '2rem'};
+  margin-right: ${props => props.marginRight || "2rem"};
 
   h6 {
     position: relative;
@@ -83,7 +83,7 @@ const Block = styled.div`
 
     @media all and (max-width: 884px) {
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: -0.5rem;
@@ -115,7 +115,7 @@ const Block = styled.div`
       color: var(--grey3);
     }
   }
-`
+`;
 
 const LogoBlock = styled(Block)`
   margin-right: 2rem;
@@ -142,7 +142,7 @@ const LogoBlock = styled(Block)`
       color: black;
     }
   }
-`
+`;
 
 const GreenCircle = styled.span`
   margin-left: 0.35rem;
@@ -150,17 +150,17 @@ const GreenCircle = styled.span`
   background: #3ebd93;
   padding: 5px;
   border-radius: 20px;
-`
+`;
 
 const Footer = () => (
   <StyledFooter>
     <LogoBlock>
       <Logo />
-      <p style={{ marginTop: '1rem' }}>
+      <p style={{ marginTop: "1rem" }}>
         Home of student developers. The best learning, tools, resources and
         support.
       </p>
-      <p style={{ marginTop: '0.5rem', marginBottom: '0.5rem' }}>
+      <p style={{ marginTop: "0.5rem", marginBottom: "0.5rem" }}>
         © {new Date().getFullYear()} Dorm Dev, LLC
       </p>
       <a className="terms-privacy" href="https://dorm.dev/terms">
@@ -216,13 +216,6 @@ const Footer = () => (
             </Link>
           </li>
           <li>
-            <Link href="/discounts">
-              <a className="inactive">
-                Offers & discounts <LinkLabel>Soon</LinkLabel>
-              </a>
-            </Link>
-          </li>
-          <li>
             <a href="https://dorm.dev/studentstatus">Student Verification</a>
           </li>
           <li>
@@ -261,6 +254,6 @@ const Footer = () => (
       </Block>
     </FooterNavigation>
   </StyledFooter>
-)
+);
 
-export default Footer
+export default Footer;
