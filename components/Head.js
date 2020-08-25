@@ -12,7 +12,7 @@ const DocumentHead = ({ title, description, ogImage }) => (
       name="description"
       content={
         description ||
-        "The best learning, tools, resources and support for students in tech. Be part of a community of tinkerers and changemakers."
+        "The best learning, tools, resources and support for students in tech. Be part of a community of developers, designers, and doers."
       }
     />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -27,7 +27,7 @@ const DocumentHead = ({ title, description, ogImage }) => (
       property="og:description"
       content={
         description ||
-        "The best learning, tools, resources and support for students in tech. Be part of a community of tinkerers and changemakers."
+        "The best learning, tools, resources and support for students in tech. Be part of a community of developers, designers, and doers."
       }
     />
     <meta
@@ -51,7 +51,7 @@ const DocumentHead = ({ title, description, ogImage }) => (
       property="twitter:description"
       content={
         description ||
-        "The best learning, tools, resources and support for students in tech. Be part of a community of tinkerers and changemakers."
+        "The best learning, tools, resources and support for students in tech. Be part of a community of developers, designers, and doers."
       }
     />
     <meta
