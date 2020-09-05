@@ -226,7 +226,7 @@ const Footer = () => (
           </li>
           <li>
             <a href="https://status.dormdev.com">
-              Status
+              Uptime
               <GreenCircle />
             </a>
           </li>
