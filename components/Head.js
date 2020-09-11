@@ -18,7 +18,7 @@ const DocumentHead = ({ title, description, ogImage }) => (
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https:/dormdev.com" />
+    <meta property="og:url" content="https:/dormdev.com/" />
     <meta
       property="og:title"
       content={title || 'DormDev - Home of student developers'}
@@ -42,7 +42,7 @@ const DocumentHead = ({ title, description, ogImage }) => (
       property="twitter:card"
       content={ogImage ? 'summary_large_image' : 'summary'}
     />
-    <meta property="twitter:url" content="https:/dormdev.com" />
+    <meta property="twitter:url" content="https:/dormdev.com/" />
     <meta
       property="twitter:title"
       content={title || 'DormDev - Home of student developers'}
