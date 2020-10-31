@@ -8,8 +8,8 @@
   <a aria-label="Deployed on Vercel/Zeit" href="https://vercel.com/w-8/dormdev">
     <img src="https://img.shields.io/badge/deployed-success.svg?style=flat-square&logo=Vercel&labelColor=000000&logoWidth=20">
   </a>
-  <a aria-label="CircleCI" href="https://circleci.com/gh/W8/dormdev/tree/master">
-    <img src="https://img.shields.io/circleci/build/github/W8/dormdev/master?style=flat-square">
+  <a aria-label="CircleCI" href="https://circleci.com/gh/w8/dormdev/tree/master">
+    <img src="https://img.shields.io/circleci/build/github/w8/dormdev/master?style=flat-square">
   </a>
   <a aria-label="Uptime status" href="https://status.dormdev.com">
     <img src="https://img.shields.io/uptimerobot/ratio/m784086893-5f638a54e5248faf8e7ec23d?style=flat-square">
@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
   <a aria-label="Built with Next.js" href="https://github.com/zeit/next.js">
-    <img alt="" src="https://img.shields.io/github/package-json/dependency-version/W8/dormdev/next?style=flat-square&logo=Next.js&labelColor=000000&logoWidth=20">
+    <img alt="" src="https://img.shields.io/github/package-json/dependency-version/w8/dormdev/next?style=flat-square&logo=Next.js&labelColor=000000&logoWidth=20">
   </a>
   <a aria-label="Node.js Version" href="https://github.com/nodejs/node">
     <img src="https://img.shields.io/badge/node-12.x-black?style=flat-square">
@@ -26,8 +26,8 @@
   <a aria-label="DormDev Version" href="./package.json#L3">
     <img src="https://img.shields.io/github/package-json/v/w8/dormdev?color=black&style=flat-square">
   </a>
-  <a aria-label="DormDev contributors" href="https://github.com/W8/dormdev/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/W8/dormdev?color=black&style=flat-square">
+  <a aria-label="DormDev contributors" href="https://github.com/w8/dormdev/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/w8/dormdev?color=black&style=flat-square">
   </a>
 </p>
 
