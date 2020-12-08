@@ -1,7 +1,7 @@
 <!-- Banner Image -->
 
 <p align="center">
-<a href="https://dormdev.com"><img src="./public/assets/header.png" width="500" alt="DormDev header"></a>
+<a href="https://dormdev.com"><img src="./public/assets/header-white.png" width="500" alt="DormDev header"></a>
 </p>
 
 <p align="center">
