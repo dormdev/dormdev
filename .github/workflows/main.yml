@@ -1,0 +1,17 @@
+# Audit URLs using Lighthouse and test performance with Lighthouse CI.
+# From: https://github.com/treosh/lighthouse-ci-action
+
+name: Lighthouse
+on: push
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: rlespinasse/github-slug-action@v1.1.x
+      - name: Run Lighthouse and test budgets
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            https://dormdev-git-${{env.GITHUB_REF_SLUG}}.napkin.vercel.app
+          temporaryPublicStorage: true

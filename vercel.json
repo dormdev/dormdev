@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "alias": ["dormdev.com"],
+  "scope": "napkin",
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "github": {
+    "autoAlias": true
+  }
+}
